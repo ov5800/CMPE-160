@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+dC:\modeltech64_10.1d\examples
+T_opt
+VR?YGd3<[fH0V<h@e<zTOR3
+04 5 8 work lab04 bdf_type 1
+=1-40b07612213c-61fb1d02-2d4-1568
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.1d;51
+Elab04
+Z0 w1643846622
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dD:\CMPE 160\Labs\Lab04
+Z4 8D:/CMPE 160/Labs/Lab04/Lab04.vhd
+Z5 FD:/CMPE 160/Labs/Lab04/Lab04.vhd
+l0
+L24
+V[ENf>7^>BAc]LKLcMGK<A3
+Z6 OL;C;10.1d;51
+32
+Z7 !s108 1643846882.627000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|D:/CMPE 160/Labs/Lab04/Lab04.vhd|
+Z9 !s107 D:/CMPE 160/Labs/Lab04/Lab04.vhd|
+Z10 o-work work -2002 -explicit
+Z11 tExplicit 1
+!s100 :@EKX?2f[G?nZ3E0m=B;?0
+!i10b 1
+Abdf_type
+R1
+R2
+DEx4 work 5 lab04 0 22 [ENf>7^>BAc]LKLcMGK<A3
+l48
+L37
+VeQKXlIW9WZUf]j6XEWG4V3
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 z;C@beV9bFDC:S:YQLW=:0
+!i10b 1

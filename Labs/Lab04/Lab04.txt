@@ -1,0 +1,3 @@
+force C 0 0, 1 200ns -repeat 400ns
+force N0 0 0, 1 100ns -repeat 200ns
+force N1 0 0, 1 50ns -repeat 100ns

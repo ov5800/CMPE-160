@@ -1,0 +1,48 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\modeltech64_10.1d\examples
+T_opt
+VR2kTioUR?UdLY>M_2X=Ml1
+04 3 8 work ex1 bdf_type 1
+=1-40b0761221e7-61df73b6-73-2350
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.1d;51
+Z1 dC:\modeltech64_10.1d\examples
+Eex1
+Z2 w1642035814
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dD:\CMPE160\Exercise 1
+Z6 8D:/CMPE160/Exercise 1/Ex1.vhd
+Z7 FD:/CMPE160/Exercise 1/Ex1.vhd
+l0
+L24
+VBZHHM4f6]OheNUch0IGmZ2
+Z8 OL;C;10.1d;51
+32
+Z9 !s108 1642035916.934000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|D:/CMPE160/Exercise 1/Ex1.vhd|
+Z11 !s107 D:/CMPE160/Exercise 1/Ex1.vhd|
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1
+!s100 F0Tg?@T0N`WMg4aZ^:[3^3
+!i10b 1
+Abdf_type
+R3
+R4
+DEx4 work 3 ex1 0 22 BZHHM4f6]OheNUch0IGmZ2
+32
+l42
+L35
+V:4OF`JdbPH=?b>nWdS`j73
+!s100 @YTdF_EhTk>NY]BkT=@<;2
+R8
+R9
+R10
+R11
+R12
+R13
+!i10b 1
