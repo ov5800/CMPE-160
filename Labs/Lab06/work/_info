@@ -1,0 +1,136 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/20.1
+Eex6
+Z0 w1644464473
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 5
+Z3 dC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06
+Z4 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06/Ex6.vhd
+Z5 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06/Ex6.vhd
+l0
+Z6 L25 1
+VE^Em_U?E=4Q3MlF5O8]bf0
+!s100 Ia8LJL82S<]>_ELA3QJ3K2
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1644464636
+!i10b 1
+Z9 !s108 1644464636.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06/Ex6.vhd|
+Z11 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06/Ex6.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abdf_type
+R1
+R2
+DEx4 work 3 ex6 0 22 E^Em_U?E=4Q3MlF5O8]bf0
+!i122 5
+l72
+L45 116
+V`NDlFFZiLKXbadR0ldiHk2
+!s100 8d8mWFjQ=A9T`:lOnBZHl0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eex6_single
+Z14 w1644465038
+R1
+R2
+!i122 11
+R3
+Z15 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06/Ex6_single.vhd
+Z16 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06/Ex6_single.vhd
+l0
+R6
+VOLiVmk:O2=hPoh_6NLYmC1
+!s100 kA0B<WMTI?7:4SNk[hB0R0
+R7
+32
+Z17 !s110 1644465292
+!i10b 1
+Z18 !s108 1644465292.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06/Ex6_single.vhd|
+Z20 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06/Ex6_single.vhd|
+!i113 1
+R12
+R13
+Abdf_type
+R1
+R2
+Z21 DEx4 work 10 ex6_single 0 22 OLiVmk:O2=hPoh_6NLYmC1
+!i122 11
+l45
+Z22 L36 35
+Z23 VheCBS[AMa9o5zR8Nf0;Z]1
+Z24 !s100 U5DmdKTbZa>e[McVSoGfV3
+R7
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13
+Eex6_tb
+Z25 w1644465276
+Z26 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 10
+R3
+Z27 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06/ex6_tb.vhd
+Z28 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06/ex6_tb.vhd
+l0
+L12 1
+V`6]N82Y3z3OL8<gEMVAQe0
+!s100 [WQ<PB;mc`B18=HI2C;CN0
+R7
+32
+R17
+!i10b 1
+R18
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06/ex6_tb.vhd|
+Z30 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06/ex6_tb.vhd|
+!i113 1
+R12
+R13
+Atest_bench
+R26
+R1
+R2
+DEx4 work 6 ex6_tb 0 22 `6]N82Y3z3OL8<gEMVAQe0
+!i122 10
+l38
+L15 38
+V[ZW16I@DhET5Q?_o>?X7[1
+!s100 ZTg]JiX6]e`Y]J?AA3@aQ2
+R7
+32
+R17
+!i10b 1
+R18
+R29
+R30
+!i113 1
+R12
+R13

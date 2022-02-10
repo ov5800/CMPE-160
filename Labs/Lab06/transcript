@@ -1,0 +1,95 @@
+# Compile of Ex6.vhd was successful.
+# Compile of ex6_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.ex6_tb
+# vsim work.ex6_tb 
+# Start time: 22:39:36 on Feb 09,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ex6_tb(test_bench)
+# Loading work.ex6(bdf_type)
+# ** Fatal: (vsim-3817) Port "A1" of entity "ex6" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /ex6_tb/UUT File: C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06/Ex6.vhd Line: 29
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 22:39:36 on Feb 09,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 5
+vsim work.ex6_tb
+# vsim work.ex6_tb 
+# Start time: 22:40:27 on Feb 09,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ex6_tb(test_bench)
+# Loading work.ex6(bdf_type)
+# ** Fatal: (vsim-3817) Port "A1" of entity "ex6" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /ex6_tb/UUT File: C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06/Ex6.vhd Line: 29
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 22:40:28 on Feb 09,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# Compile of ex6_tb.vhd was successful.
+# Compile of Ex6.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.ex6_tb
+# vsim work.ex6_tb 
+# Start time: 22:44:08 on Feb 09,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ex6_tb(test_bench)
+# Loading work.ex6(bdf_type)
+# ** Fatal: (vsim-3817) Port "A1" of entity "ex6" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /ex6_tb/UUT File: C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06/Ex6.vhd Line: 29
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 22:44:09 on Feb 09,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 4
+# Compile of ex6_tb.vhd was successful.
+# Compile of Ex6_single.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.ex6_tb
+# vsim work.ex6_tb 
+# Start time: 22:52:00 on Feb 09,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ex6_tb(test_bench)
+# Loading work.ex6(bdf_type)
+# ** Fatal: (vsim-3817) Port "A1" of entity "ex6" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /ex6_tb/UUT File: C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06/Ex6.vhd Line: 29
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 22:52:01 on Feb 09,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 4
+# Compile of ex6_tb.vhd failed with 1 errors.
+# Compile of Ex6_single.vhd was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of ex6_tb.vhd was successful.
+# Compile of Ex6_single.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.ex6_tb
+# vsim work.ex6_tb 
+# Start time: 22:55:06 on Feb 09,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ex6_tb(test_bench)
+# Loading work.ex6_single(bdf_type)
+add wave -position insertpoint  \
+sim:/ex6_tb/A \
+sim:/ex6_tb/B \
+sim:/ex6_tb/Cin \
+sim:/ex6_tb/Sum \
+sim:/ex6_tb/Cout
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# End time: 23:01:49 on Feb 09,2022, Elapsed time: 0:06:43
+# Errors: 0, Warnings: 1
