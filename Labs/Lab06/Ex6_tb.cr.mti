@@ -15,4 +15,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity Ex6_single
 -- Compiling architecture bdf_type of Ex6_single
 
-} {} {}}
+} {} {}} {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06/Ex6_Full.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06/Ex6_Full.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Ex6_Full
+-- Compiling architecture bdf_type of Ex6_Full
+** Error: C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06/Ex6_Full.vhd(80): near "PORT": (vcom-1576) expecting == or '+' or '-' or '&'.
+** Note: C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab06/Ex6_Full.vhd(108): VHDL Compiler exiting
+
+} {8.0 9.0} {}}
