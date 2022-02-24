@@ -1,0 +1,30 @@
+# Compile of Ex7.vhd was successful.
+# Compile of Ex7_FlipFlop.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.ex7_flipflop
+# vsim -gui work.ex7_flipflop 
+# Start time: 19:22:47 on Feb 23,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ex7_flipflop(bdf_type)
+add wave -position end  sim:/ex7_flipflop/D
+add wave -position end  sim:/ex7_flipflop/Clk
+add wave -position end  sim:/ex7_flipflop/Q2
+add wave -position end  sim:/ex7_flipflop/Qn3
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: olive  Hostname: OLIVERVOSTRO  ProcessID: 7312
+#           Attempting to use alternate WLF file "./wlftg7x3c7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftg7x3c7
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+do Ex7.txt.txt
+# ** UI-Msg (suppressible): (vsim-4008) Object 'EN' not found.
+# Error in macro ./Ex7.txt.txt line 2
+# ** UI-Msg (suppressible): (vsim-4008) Object 'EN' not found.
+# 
+#     while executing
+# "force EN 0 0, 1 50ns -repeat 100ns"
+do Ex7.txt.txt
+run

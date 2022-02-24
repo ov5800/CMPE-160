@@ -1,0 +1,93 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/20.1
+Eex7
+Z0 w1645661249
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+Z3 dC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab07
+Z4 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab07/Ex7.vhd
+Z5 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab07/Ex7.vhd
+l0
+Z6 L25 1
+VOhT=jbYPjJ@8ZMNMBCABZ2
+!s100 gk53>;7XMkDQE9ZFHj9ID0
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1645662150
+!i10b 1
+Z9 !s108 1645662150.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab07/Ex7.vhd|
+Z11 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab07/Ex7.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abdf_type
+R1
+R2
+DEx4 work 3 ex7 0 22 OhT=jbYPjJ@8ZMNMBCABZ2
+!i122 1
+l45
+L35 37
+V1<mGUSVAzFMi5Q^QOKDKf1
+!s100 i^l8D>FP4l[1UPN6TVCIh3
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eex7_flipflop
+Z14 w1645662119
+R1
+R2
+!i122 2
+R3
+Z15 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab07/Ex7_FlipFlop.vhd
+Z16 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab07/Ex7_FlipFlop.vhd
+l0
+R6
+V19V2UV7`j^lI^cPdl2UIz3
+!s100 W<L5^GZf6WBWTgC`[EF=_0
+R7
+32
+Z17 !s110 1645662151
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab07/Ex7_FlipFlop.vhd|
+!s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab07/Ex7_FlipFlop.vhd|
+!i113 1
+R12
+R13
+Abdf_type
+R1
+R2
+DEx4 work 12 ex7_flipflop 0 22 19V2UV7`j^lI^cPdl2UIz3
+!i122 2
+l52
+L35 68
+V`X7DZCAaQeD2fFNjElTzX1
+!s100 =@1:k@6B_Ibn6M4R2XNY92
+R7
+32
+R17
+!i10b 1
+R9
+R18
+Z19 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab07/Ex7_FlipFlop.vhd|
+!i113 1
+R12
+R13
