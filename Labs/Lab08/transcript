@@ -1,0 +1,29 @@
+# Compile of ex8_tb_tri.vhd was successful.
+# Compile of Ex8Tri.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.ex8_tb_tri
+# vsim -gui work.ex8_tb_tri 
+# Start time: 20:58:10 on Mar 02,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ex8_tb_tri(test_bench)
+# Loading work.ex8tri(bdf_type)
+add wave -position end  sim:/ex8_tb_tri/CLK
+add wave -position end  sim:/ex8_tb_tri/SL
+add wave -position end  sim:/ex8_tb_tri/SIN
+add wave -position end  sim:/ex8_tb_tri/RST
+add wave -position end  sim:/ex8_tb_tri/A
+add wave -position end  sim:/ex8_tb_tri/B
+add wave -position end  sim:/ex8_tb_tri/C
+add wave -position end  sim:/ex8_tb_tri/D
+add wave -position end  sim:/ex8_tb_tri/QA
+add wave -position end  sim:/ex8_tb_tri/QB
+add wave -position end  sim:/ex8_tb_tri/QC
+add wave -position end  sim:/ex8_tb_tri/QD
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# End time: 21:01:45 on Mar 02,2022, Elapsed time: 0:03:35
+# Errors: 0, Warnings: 1
