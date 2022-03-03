@@ -1,2 +1,2 @@
 force D 0 0, 1 225ns -repeat 450ns
-force En 0 0, 1 50ns -repeat 100ns
+force Clk 0 0, 1 50ns -repeat 100ns

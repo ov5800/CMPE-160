@@ -15,7 +15,7 @@
 
 -- PROGRAM		"Quartus Prime"
 -- VERSION		"Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
--- CREATED		"Wed Feb 23 19:07:29 2022"
+-- CREATED		"Wed Mar 02 00:37:18 2022"
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
@@ -27,8 +27,8 @@ ENTITY Ex7 IS
 	(
 		EN :  IN  STD_LOGIC;
 		D :  IN  STD_LOGIC;
-		pin_name3 :  OUT  STD_LOGIC;
-		pin_name4 :  OUT  STD_LOGIC
+		Q :  OUT  STD_LOGIC;
+		Qn :  OUT  STD_LOGIC
 	);
 END Ex7;
 
@@ -43,8 +43,8 @@ SIGNAL	SYNTHESIZED_WIRE_5 :  STD_LOGIC;
 
 
 BEGIN 
-pin_name3 <= SYNTHESIZED_WIRE_3;
-pin_name4 <= SYNTHESIZED_WIRE_0;
+Q <= SYNTHESIZED_WIRE_3;
+Qn <= SYNTHESIZED_WIRE_0;
 
 
 
