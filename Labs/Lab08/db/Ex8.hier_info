@@ -1,0 +1,28 @@
+|Ex8
+QA <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst15.ACLR
+RST => inst16.ACLR
+RST => inst17.ACLR
+RST => inst18.ACLR
+CLK => inst15.CLK
+CLK => inst16.CLK
+CLK => inst17.CLK
+CLK => inst18.CLK
+SL => inst1.IN0
+SL => inst20.IN0
+SL => inst7.IN0
+SL => inst12.IN0
+SL => inst5.IN0
+SL => inst13.IN0
+SL => inst3.IN0
+SL => inst14.IN0
+A => inst1.IN1
+SIN => inst.IN0
+QB <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+B => inst7.IN1
+QC <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+C => inst5.IN1
+QD <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+D => inst3.IN1
+
+

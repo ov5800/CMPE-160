@@ -1,0 +1,46 @@
+|full_adder
+A => xor3:xor3_instance1.A
+A => and22:and22_instance1.A
+A => and22:and22_instance2.A
+B => xor3:xor3_instance1.B
+B => and22:and22_instance1.B
+B => and22:and22_instance3.A
+Cin => xor3:xor3_instance1.C
+Cin => and22:and22_instance2.B
+Cin => and22:and22_instance3.B
+Sum <= xor3:xor3_instance1.Y
+Cout <= or33:or33_instance1.Y
+
+
+|full_adder|xor3:xor3_instance1
+A => Y.IN0
+B => Y.IN1
+C => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|and22:and22_instance1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|and22:and22_instance2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|and22:and22_instance3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|or33:or33_instance1
+A => Y.IN0
+B => Y.IN1
+C => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

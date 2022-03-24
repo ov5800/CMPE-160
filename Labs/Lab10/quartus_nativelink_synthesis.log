@@ -1,0 +1,10 @@
+Info: Using NativeLink to launch synthesis Tool
+Synthesis tool <None> is not supported by NativeLink
+Error: NativeLink flow failed to complete synthesis
+
+================The following information is provided to Debug NativeLink Script=================
+Nativelink TCL script failed with errorCode:  POSIX ENOENT {no such file or directory}
+Nativelink TCL script failed with errorInfo:  couldn't open "C:/intelFPGA_lite/20.1/quartus/bin64/tclIndex": no such file or directory
+    while executing
+"open [file join $dir tclIndex]"
+PATH Environment Variable is set to :  c:\intelfpga_lite\20.1\quartus\bin64\;c:\intelfpga_lite\20.1\quartus\bin64\;C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem;;C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem;C:/intelFPGA_lite/20.1/modelsim_ase\gcc-4.2.1-mingw32vc12;C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem;;C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem;C:/intelFPGA_lite/20.1/modelsim_ase\gcc-4.2.1-mingw32vc12;C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem;C:\Users\olive\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\olive\AppData\Local\Programs\Python\Python310\;C:\Users\olive\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\olive\AppData\Local\Programs\Python\Python39\;C:\Users\olive\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\Users\olive\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\olive\AppData\Local\Programs\Python\Python310\;C:\Users\olive\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\olive\AppData\Local\Programs\Python\Python39\;C:\Users\olive\AppData\Local\Microsoft\WindowsApps;C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem;C:\Users\olive\AppData\Local\GitHubDesktop\bin

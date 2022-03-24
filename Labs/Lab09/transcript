@@ -1,155 +1,20 @@
-# Compile of Ex9.vhd was successful.
-# Compile of ex9_tb.vhd failed with 14 errors.
-# 2 compiles, 1 failed with 14 errors.
-# Compile of Ex9.vhd was successful.
-# Compile of ex9_tb.vhd was successful.
-# 2 compiles, 0 failed with no errors.
 vsim -gui work.ex9_tb
 # vsim -gui work.ex9_tb 
-# Start time: 19:24:59 on Mar 16,2022
+# Start time: 12:38:05 on Mar 22,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.ex9_tb(test_bench)
 # Loading work.ex9(bdf_type)
-add wave -position end  sim:/ex9_tb/CLK
-add wave -position end  sim:/ex9_tb/RST
-add wave -position end  sim:/ex9_tb/A
-add wave -position end  sim:/ex9_tb/B
-add wave -position end  sim:/ex9_tb/Z
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-restart
-run
-quit -sim
-# End time: 19:36:35 on Mar 16,2022, Elapsed time: 0:11:36
-# Errors: 0, Warnings: 1
-# Compile of Ex9.vhd was successful.
-# Compile of ex9_tb.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.ex9_tb
-# vsim -gui work.ex9_tb 
-# Start time: 19:37:54 on Mar 16,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.ex9_tb(test_bench)
-# Loading work.ex9(bdf_type)
-add wave -position end  sim:/ex9_tb/CLK
-add wave -position end  sim:/ex9_tb/RST
-add wave -position end  sim:/ex9_tb/A
-add wave -position end  sim:/ex9_tb/B
-add wave -position end  sim:/ex9_tb/Z
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-quit -sim
-# End time: 19:43:59 on Mar 16,2022, Elapsed time: 0:06:05
-# Errors: 0, Warnings: 1
-# Compile of Ex9.vhd was successful.
-# Compile of ex9_tb.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.ex9_tb
-# vsim -gui work.ex9_tb 
-# Start time: 19:44:12 on Mar 16,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.ex9_tb(test_bench)
-# Loading work.ex9(bdf_type)
-add wave -position end  sim:/ex9_tb/CLK
-add wave -position end  sim:/ex9_tb/RST
-add wave -position end  sim:/ex9_tb/A
-add wave -position end  sim:/ex9_tb/B
-add wave -position end  sim:/ex9_tb/Z
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-quit -sim
-# End time: 19:45:18 on Mar 16,2022, Elapsed time: 0:01:06
-# Errors: 0, Warnings: 1
-# Compile of Ex9.vhd was successful.
-# Compile of ex9_tb.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.ex9_tb
-# vsim -gui work.ex9_tb 
-# Start time: 19:49:54 on Mar 16,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.ex9_tb(test_bench)
-# Loading work.ex9(bdf_type)
-add wave -position end  sim:/ex9_tb/CLK
-add wave -position end  sim:/ex9_tb/RST
-add wave -position end  sim:/ex9_tb/A
-add wave -position end  sim:/ex9_tb/B
-add wave -position end  sim:/ex9_tb/Z
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
+add wave -position insertpoint  \
+sim:/ex9_tb/CLK \
+sim:/ex9_tb/RST \
+sim:/ex9_tb/A \
+sim:/ex9_tb/B \
+sim:/ex9_tb/Z \
+sim:/ex9_tb/clk_period
 restart
 run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-quit -sim
-# End time: 19:51:13 on Mar 16,2022, Elapsed time: 0:01:19
-# Errors: 0, Warnings: 1
-vsim -gui work.ex9_tb
-# vsim -gui work.ex9_tb 
-# Start time: 19:53:28 on Mar 16,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.ex9_tb(test_bench)
-# Loading work.ex9(bdf_type)
-add wave -position end  sim:/ex9_tb/CLK
-add wave -position end  sim:/ex9_tb/RST
-add wave -position end  sim:/ex9_tb/A
-add wave -position end  sim:/ex9_tb/B
-add wave -position end  sim:/ex9_tb/Z
-restart
-run
-quit -sim
-# End time: 19:59:11 on Mar 16,2022, Elapsed time: 0:05:43
-# Errors: 0, Warnings: 1
-# Compile of Ex9.vhd was successful.
-# Compile of ex9_tb.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.ex9_tb
-# vsim -gui work.ex9_tb 
-# Start time: 19:59:25 on Mar 16,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.ex9_tb(test_bench)
-# Loading work.ex9(bdf_type)
-add wave -position end  sim:/ex9_tb/CLK
-add wave -position end  sim:/ex9_tb/RST
-add wave -position end  sim:/ex9_tb/A
-add wave -position end  sim:/ex9_tb/B
-add wave -position end  sim:/ex9_tb/Z
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-restart
-# Compile of Ex9.vhd was successful.
-# Compile of ex9_tb.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.ex9_tb(test_bench)
-# Loading work.ex9(bdf_type)
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# End time: 20:14:58 on Mar 16,2022, Elapsed time: 0:15:33
+# End time: 12:39:52 on Mar 22,2022, Elapsed time: 0:01:47
 # Errors: 0, Warnings: 1
