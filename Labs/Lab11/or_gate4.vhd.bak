@@ -1,0 +1,19 @@
+-- Creates 4 input OR
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity or_gate4 is
+
+	Port(
+		signal A, B, C, D : in std_logic;
+		signal Y : out std_logic);
+		
+end;
+
+architecture or4 of or_gate4 is
+
+	begin
+
+		Y <= A OR B OR C OR D after 7ns;
+
+end;

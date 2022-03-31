@@ -1,0 +1,338 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/20.1
+Eand_gate4
+Z0 w1648569293
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 60
+Z3 dC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11
+Z4 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/and_gate4.vhd
+Z5 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/and_gate4.vhd
+l0
+L5 1
+VYf;JWg?BGkI1[^5ki;SMV2
+!s100 e9cN`[I7m19i2V?K7V8<81
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1648686039
+!i10b 1
+Z8 !s108 1648686039.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/and_gate4.vhd|
+Z10 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/and_gate4.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Aand4
+R1
+R2
+DEx4 work 9 and_gate4 0 22 Yf;JWg?BGkI1[^5ki;SMV2
+!i122 60
+l15
+Z13 L13 7
+V<N05Qm9nQART<[_:Q8jR?0
+!s100 0;lG4k]O9^>:FdQLZ`0PA2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edm74ls153
+Z14 w1648583524
+R1
+R2
+!i122 61
+R3
+Z15 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/DM74LS153.vhd
+Z16 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/DM74LS153.vhd
+l0
+L4 1
+V4`3WJR79Dk[A3biSnfoB<0
+!s100 ]HWChE1IUE]RnA9XgTi8[0
+R6
+32
+Z17 !s110 1648686040
+!i10b 1
+R8
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/DM74LS153.vhd|
+Z19 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/DM74LS153.vhd|
+!i113 1
+R11
+R12
+Astruct
+R1
+R2
+Z20 DEx4 work 9 dm74ls153 0 22 4`3WJR79Dk[A3biSnfoB<0
+!i122 61
+l90
+L82 15
+Veg[oQ5RRh1e^KS8RbOHUn1
+!s100 GYmLCjnblW>R<E0@MNH6@0
+R6
+32
+R17
+!i10b 1
+R8
+R18
+R19
+!i113 1
+R11
+R12
+Abehv
+R1
+R2
+R20
+!i122 61
+l53
+L48 31
+VS36FYG5L>>X?Ye;cAidzB1
+!s100 JhLi7a4o]VRhm@Y_08h2R3
+R6
+32
+R17
+!i10b 1
+R8
+R18
+R19
+!i113 1
+R11
+R12
+Adf
+R1
+R2
+R20
+!i122 61
+l20
+L13 32
+V3z2?UAmT<0^jm[Fo;8i_K3
+!s100 VCz@:gMaezgTXa_QK=VKA0
+R6
+32
+R17
+!i10b 1
+R8
+R18
+R19
+!i113 1
+R11
+R12
+Einverter
+Z21 w1648570686
+R1
+R2
+!i122 62
+R3
+Z22 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/inverter.vhd
+Z23 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/inverter.vhd
+l0
+L5 1
+VFBR]fZd<e?aR>A_>@Dk8]2
+!s100 <S4V5C5NSh7POWT^UoRIz3
+R6
+32
+R17
+!i10b 1
+Z24 !s108 1648686040.000000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/inverter.vhd|
+Z26 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/inverter.vhd|
+!i113 1
+R11
+R12
+Anot1
+R1
+R2
+DEx4 work 8 inverter 0 22 FBR]fZd<e?aR>A_>@Dk8]2
+!i122 62
+l15
+R13
+V:nGhFk8:A_TlN3Y1^i@<V1
+!s100 UgakhVMoD5[Dh;07i@gBV1
+R6
+32
+R17
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Emux
+Z27 w1648583293
+R1
+R2
+!i122 63
+R3
+Z28 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/mux.vhd
+Z29 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/mux.vhd
+l0
+L4 1
+V>Xh5dkEP<dO0TN<0eYhog1
+!s100 X4PP<G8de4ZP;fo[z3ld]3
+R6
+32
+R17
+!i10b 1
+R24
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/mux.vhd|
+Z31 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/mux.vhd|
+!i113 1
+R11
+R12
+Amulti
+R1
+R2
+DEx4 work 3 mux 0 22 >Xh5dkEP<dO0TN<0eYhog1
+!i122 63
+l31
+L11 34
+V^J6<X9e^WNHIYBMI<IVWC0
+!s100 BG2cS=DOCY^J1@_^Kk<e<1
+R6
+32
+R17
+!i10b 1
+R24
+R30
+R31
+!i113 1
+R11
+R12
+Eor_gate4
+Z32 w1648569291
+R1
+R2
+!i122 64
+R3
+Z33 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/or_gate4.vhd
+Z34 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/or_gate4.vhd
+l0
+L5 1
+Vd[iPGkzk`Zfm`C]`nOo>C2
+!s100 WnFmUl20bjg9KBVIO@ZcK3
+R6
+32
+Z35 !s110 1648686041
+!i10b 1
+R24
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/or_gate4.vhd|
+Z37 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/or_gate4.vhd|
+!i113 1
+R11
+R12
+Aor4
+R1
+R2
+DEx4 work 8 or_gate4 0 22 d[iPGkzk`Zfm`C]`nOo>C2
+!i122 64
+l15
+R13
+VYL:0LL<1D9>WkUB[8;4o41
+!s100 dh>C@[5zMdPPaCl6L[XgZ1
+R6
+32
+R35
+!i10b 1
+R24
+R36
+R37
+!i113 1
+R11
+R12
+Etb
+Z38 w1648685897
+R1
+R2
+!i122 65
+R3
+Z39 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/tb.vhd
+Z40 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/tb.vhd
+l0
+L4 1
+VHz15g^`=10WgPo?A>U3^Q0
+!s100 cSm_i^60[D@O`YYbIZ24G3
+R6
+32
+R35
+!i10b 1
+Z41 !s108 1648686041.000000
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/tb.vhd|
+Z43 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/tb.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R20
+R1
+R2
+DEx4 work 2 tb 0 22 Hz15g^`=10WgPo?A>U3^Q0
+!i122 65
+l27
+L7 73
+VfXRRH`fJ4GZk9`FjNjf>a0
+!s100 OLl:icL[GP[4R2n23Ja6M2
+R6
+32
+R35
+!i10b 1
+R41
+R42
+R43
+!i113 1
+R11
+R12
+Etb2
+Z44 w1648686019
+R1
+R2
+!i122 66
+R3
+Z45 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/tb2.vhd
+Z46 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/tb2.vhd
+l0
+L4 1
+VU<3UC4nG3?NcUEMEM33GQ1
+!s100 8N:M_mgSgSd1gFnbD^zoW1
+R6
+32
+R35
+!i10b 1
+R41
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/tb2.vhd|
+Z48 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/tb2.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R20
+R1
+R2
+Z49 DEx4 work 3 tb2 0 22 U<3UC4nG3?NcUEMEM33GQ1
+!i122 66
+l27
+Z50 L7 65
+V2U1W7:gZb2>UTd;bOMbaG1
+!s100 PFdLb]^B^ln2Efcg1gWLX1
+R6
+32
+R35
+!i10b 1
+R41
+R47
+R48
+!i113 1
+R11
+R12

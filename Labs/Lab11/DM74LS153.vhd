@@ -1,0 +1,96 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity DM74LS153 is
+	Port(
+		signal G1, G2, A, B : in std_logic;
+		signal C1, C2 : in std_logic_vector( 3 downto 0 );
+		signal Y1, Y2 : out std_logic);
+end;
+
+
+-- architecture df (data flow)
+architecture df of DM74LS153 is
+--Declare internal control signals for each of the multiplexers
+
+	signal sControl1 : std_logic_vector( 2 downto 0 );
+	signal sControl2 : std_logic_vector( 2 downto 0 );
+
+
+begin
+	
+	-- model of the first multiplexer
+	sControl1 <= ( G1 & B & A );
+	with sControl1 select
+		Y1 <=
+			C1(0) when "000",
+			C1(1) when "001",
+			C1(2) when "010",
+			C1(3) when "011",
+			'0'	when others;
+		
+	
+	--model of the second multiplexer
+	sControl2 <= ( G2 & B & A );
+	with sControl2 select
+		Y2 <= 
+			C2(0) when "000",
+			C2(1) when "001",
+			C2(2) when "010",
+			C2(3) when "011",
+			'0'	when others;
+	
+	
+end architecture df;
+
+
+
+architecture behv of DM74LS153 is
+
+	signal sControl1 : std_logic_vector( 2 downto 0 );
+	signal sControl2 : std_logic_vector( 2 downto 0 );
+
+begin
+
+	sControl1 <= ( G1 & B & A );
+	process1 : process( sControl1, C1 ) begin
+		case sControl1 is
+			when "000" => Y1 <= C1(0) after 22 ns;
+			when "001" => Y1 <= C1(1) after 22 ns;
+			when "010" => Y1 <= C1(2) after 22 ns;
+			when "011" => Y1 <= C1(3) after 22 ns;
+			when others => Y1 <= '0' after 22 ns;
+		end case;
+	end process;
+	
+	
+	sControl2 <= ( G2 & B & A );
+	process2 : process( sControl2, C2 ) begin
+		case sControl2 is
+			when "000" => Y2 <= C2(0) after 22 ns;
+			when "001" => Y2 <= C2(1) after 22 ns;
+			when "010" => Y2 <= C2(2) after 22 ns;
+			when "011" => Y2 <= C2(3) after 22 ns;
+			when others => Y2 <= '0' after 22 ns;
+		end case;
+	end process;
+
+end architecture behv;
+
+
+-- architecture struct (structural)
+architecture struct of DM74LS153 is
+
+	component mux is
+		port( A, B, G : in std_logic;
+				C : in std_logic_vector( 3 downto 0);
+				Y : out std_logic );
+	end component;
+
+begin
+
+	mux1 : mux port map( A => A, B => B, C => C1, G => G1, Y => Y1 );
+	mux2 : mux port map( A => A, B => B, C => C2, G => G2, Y => Y2 );
+	
+
+end architecture struct;

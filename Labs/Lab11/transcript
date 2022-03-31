@@ -1,0 +1,202 @@
+# Compile of and_gate4.vhd was successful.
+# Compile of DM74LS153.vhd failed with 6 errors.
+# Compile of inverter.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of or_gate4.vhd was successful.
+# 5 compiles, 1 failed with 6 errors.
+# Compile of and_gate4.vhd was successful.
+# Compile of DM74LS153.vhd failed with 2 errors.
+# Compile of inverter.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of or_gate4.vhd was successful.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of and_gate4.vhd was successful.
+# Compile of DM74LS153.vhd was successful.
+# Compile of inverter.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of or_gate4.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of and_gate4.vhd was successful.
+# Compile of DM74LS153.vhd was successful.
+# Compile of inverter.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of or_gate4.vhd was successful.
+# Compile of tb.vhd failed with 1 errors.
+# 6 compiles, 1 failed with 1 error.
+# Compile of and_gate4.vhd was successful.
+# Compile of DM74LS153.vhd was successful.
+# Compile of inverter.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of or_gate4.vhd was successful.
+# Compile of tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.tb
+# vsim -gui work.tb 
+# Start time: 20:05:09 on Mar 30,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb(behavior)
+# Loading work.dm74ls153(df)
+# Loading work.dm74ls153(behv)
+# Loading work.dm74ls153(struct)
+# Loading work.mux(multi)
+# Loading work.inverter(not1)
+# Loading work.and_gate4(and4)
+# Loading work.or_gate4(or4)
+add wave -position end  sim:/tb/sG
+add wave -position end  sim:/tb/sA
+add wave -position end  sim:/tb/sB
+add wave -position end  sim:/tb/sC1
+add wave -position end  sim:/tb/sC2
+add wave -position end  sim:/tb/sY1
+add wave -position end  sim:/tb/sY2
+add wave -position end  sim:/tb/sY3
+add wave -position end  sim:/tb/sY4
+add wave -position end  sim:/tb/sY5
+add wave -position end  sim:/tb/sY6
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# Compile of and_gate4.vhd was successful.
+# Compile of DM74LS153.vhd was successful.
+# Compile of inverter.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of or_gate4.vhd was successful.
+# Compile of tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of and_gate4.vhd was successful.
+# Compile of DM74LS153.vhd was successful.
+# Compile of inverter.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of or_gate4.vhd was successful.
+# Compile of tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+quit -sim
+# End time: 20:12:56 on Mar 30,2022, Elapsed time: 0:07:47
+# Errors: 0, Warnings: 4
+# Compile of and_gate4.vhd was successful.
+# Compile of DM74LS153.vhd was successful.
+# Compile of inverter.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of or_gate4.vhd was successful.
+# Compile of tb.vhd was successful.
+# Compile of tb2.vhd failed with 2 errors.
+# 7 compiles, 1 failed with 2 errors.
+# Compile of and_gate4.vhd was successful.
+# Compile of DM74LS153.vhd was successful.
+# Compile of inverter.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of or_gate4.vhd was successful.
+# Compile of tb.vhd was successful.
+# Compile of tb2.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.tb2
+# vsim -gui work.tb2 
+# Start time: 20:16:37 on Mar 30,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb2(behavior)
+# Loading work.dm74ls153(df)
+# Loading work.dm74ls153(behv)
+# Loading work.dm74ls153(struct)
+# Loading work.mux(multi)
+# Loading work.inverter(not1)
+# Loading work.and_gate4(and4)
+# Loading work.or_gate4(or4)
+add wave -position end  sim:/tb2/sG
+add wave -position end  sim:/tb2/sA
+add wave -position end  sim:/tb2/sB
+add wave -position end  sim:/tb2/sC1
+add wave -position end  sim:/tb2/sC2
+add wave -position end  sim:/tb2/sY1
+add wave -position end  sim:/tb2/sY2
+add wave -position end  sim:/tb2/sY3
+add wave -position end  sim:/tb2/sY4
+add wave -position end  sim:/tb2/sY5
+add wave -position end  sim:/tb2/sY6
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+quit -sim
+# End time: 20:19:04 on Mar 30,2022, Elapsed time: 0:02:27
+# Errors: 0, Warnings: 1
+# Compile of and_gate4.vhd was successful.
+# Compile of DM74LS153.vhd was successful.
+# Compile of inverter.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of or_gate4.vhd was successful.
+# Compile of tb.vhd was successful.
+# Compile of tb2.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.tb2
+# vsim -gui work.tb2 
+# Start time: 20:19:17 on Mar 30,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb2(behavior)
+# Loading work.dm74ls153(df)
+# Loading work.dm74ls153(behv)
+# Loading work.dm74ls153(struct)
+# Loading work.mux(multi)
+# Loading work.inverter(not1)
+# Loading work.and_gate4(and4)
+# Loading work.or_gate4(or4)
+add wave -position end  sim:/tb2/sG
+add wave -position end  sim:/tb2/sA
+add wave -position end  sim:/tb2/sB
+add wave -position end  sim:/tb2/sC1
+add wave -position end  sim:/tb2/sC2
+add wave -position end  sim:/tb2/sY1
+add wave -position end  sim:/tb2/sY2
+add wave -position end  sim:/tb2/sY3
+add wave -position end  sim:/tb2/sY4
+add wave -position end  sim:/tb2/sY5
+add wave -position end  sim:/tb2/sY6
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+quit -sim
+# End time: 20:20:28 on Mar 30,2022, Elapsed time: 0:01:11
+# Errors: 0, Warnings: 1
+# Compile of and_gate4.vhd was successful.
+# Compile of DM74LS153.vhd was successful.
+# Compile of inverter.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of or_gate4.vhd was successful.
+# Compile of tb.vhd was successful.
+# Compile of tb2.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.tb2
+# vsim -gui work.tb2 
+# Start time: 20:21:40 on Mar 30,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb2(behavior)
+# Loading work.dm74ls153(df)
+# Loading work.dm74ls153(behv)
+# Loading work.dm74ls153(struct)
+# Loading work.mux(multi)
+# Loading work.inverter(not1)
+# Loading work.and_gate4(and4)
+# Loading work.or_gate4(or4)
+add wave -position end  sim:/tb2/sG
+add wave -position end  sim:/tb2/sA
+add wave -position end  sim:/tb2/sB
+add wave -position end  sim:/tb2/sC1
+add wave -position end  sim:/tb2/sC2
+add wave -position end  sim:/tb2/sY1
+add wave -position end  sim:/tb2/sY2
+add wave -position end  sim:/tb2/sY3
+add wave -position end  sim:/tb2/sY4
+add wave -position end  sim:/tb2/sY5
+add wave -position end  sim:/tb2/sY6
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+quit -sim
+# End time: 20:22:47 on Mar 30,2022, Elapsed time: 0:01:07
+# Errors: 0, Warnings: 1

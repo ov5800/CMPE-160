@@ -1,0 +1,63 @@
+{C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/tb2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/tb2.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb2
+-- Compiling architecture behavior of tb2
+-- Loading entity DM74LS153
+
+} {} {}} {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/DM74LS153.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/DM74LS153.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity DM74LS153
+-- Compiling architecture df of DM74LS153
+-- Compiling architecture behv of DM74LS153
+-- Loading entity DM74LS153
+-- Compiling architecture struct of DM74LS153
+-- Loading entity DM74LS153
+
+} {} {}} {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/or_gate4.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/or_gate4.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity or_gate4
+-- Compiling architecture or4 of or_gate4
+
+} {} {}} {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb
+-- Compiling architecture behavior of tb
+-- Loading entity DM74LS153
+
+} {} {}} {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/mux.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/mux.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux
+-- Compiling architecture multi of mux
+
+} {} {}} {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/inverter.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/inverter.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity inverter
+-- Compiling architecture not1 of inverter
+
+} {} {}} {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/and_gate4.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab11/and_gate4.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity and_gate4
+-- Compiling architecture and4 of and_gate4
+
+} {} {}}

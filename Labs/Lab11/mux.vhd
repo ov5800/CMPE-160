@@ -1,0 +1,44 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mux is
+	port(
+		signal A, B, G : in std_logic;
+		signal C  : in std_logic_vector( 3 downto 0 );
+		signal Y : out std_logic);
+end;
+
+architecture multi of mux is
+
+	component inverter is
+		port ( A : in std_logic;
+				Y : out std_logic);
+	end component;
+	
+	component and_gate4 is
+		port ( A, B, C, D : in std_logic;
+				Y : out std_logic);
+	end component;
+	
+	component or_gate4 is
+		port ( A, B, C, D : in std_logic;
+				Y : out std_logic);
+	end component;
+	
+	signal nA, nB, nG : std_logic;
+	signal out1, out2, out3, out4 : std_logic;
+
+begin
+
+		inverter_1 : inverter port map ( A => G, Y => nG );
+		inverter_2 : inverter port map ( A => B, Y => nB );
+		inverter_3 : inverter port map ( A => A, Y => nA );
+		
+		and_gate4_1 : and_gate4 port map ( A => nG, B => nB, C => nA, D => C(0), Y => out1 );
+		and_gate4_2 : and_gate4 port map ( A => nG, B => nB, C => A, D => C(1), Y => out2 );
+		and_gate4_3 : and_gate4 port map ( A => nG, B => B, C => nA, D => C(2), Y => out3 );
+		and_gate4_4 : and_gate4 port map ( A => nG, B => B, C => A, D => C(3), Y => out4 );
+		
+		or_gate4_1 : or_gate4 port map ( A => out1, B => out2, C => out3, D => out4, Y => Y );
+
+end;

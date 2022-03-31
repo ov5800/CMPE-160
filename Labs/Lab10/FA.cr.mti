@@ -1,12 +1,4 @@
-{C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/or_gate.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/or_gate.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity or_gate
--- Compiling architecture df of or_gate
-
-} {} {}} {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/and2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/and2.vhd}
+{C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/and2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/and2.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -14,17 +6,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity and2
 -- Compiling architecture df of and2
 
-} {} {}} {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/tb.vhd} {2 {vcom -work work -2002 -explicit -stats=none {C:\Users\olive\Desktop\RIT\Year 2\CMPE 160\Labs\Lab10\tb.vhd}
+} {} {}} {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/or_gate.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/or_gate.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity tb
--- Compiling architecture behavior of tb
--- Loading entity full_adder
-** Warning: C:\Users\olive\Desktop\RIT\Year 2\CMPE 160\Labs\Lab10\tb.vhd(54): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+-- Compiling entity or_gate
+-- Compiling architecture df of or_gate
 
 } {} {}} {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/full_adder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\olive\Desktop\RIT\Year 2\CMPE 160\Labs\Lab10\full_adder.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -38,13 +26,17 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling architecture half_adder of full_adder
 -- Loading entity full_adder
 
-} {} {}} {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/or33.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/or33.vhd}
+} {} {}} {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/tb.vhd} {2 {vcom -work work -2002 -explicit -stats=none {C:\Users\olive\Desktop\RIT\Year 2\CMPE 160\Labs\Lab10\tb.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity or33
--- Compiling architecture df of or33
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity tb
+-- Compiling architecture behavior of tb
+-- Loading entity full_adder
+** Warning: C:\Users\olive\Desktop\RIT\Year 2\CMPE 160\Labs\Lab10\tb.vhd(54): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 
 } {} {}} {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/and22.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/and22.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -54,13 +46,21 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity and22
 -- Compiling architecture df of and22
 
-} {} {}} {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/hadder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\olive\Desktop\RIT\Year 2\CMPE 160\Labs\Lab10\hadder.vhd}
+} {} {}} {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/or33.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/or33.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity hadder
--- Compiling architecture df of hadder
+-- Compiling entity or33
+-- Compiling architecture df of or33
+
+} {} {}} {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/or3.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/or3.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity or3
+-- Compiling architecture df of or3
 
 } {} {}} {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/xor3.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/xor3.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -70,12 +70,12 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity xor3
 -- Compiling architecture df of xor3
 
-} {} {}} {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/or3.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/or3.vhd}
+} {} {}} {C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab10/hadder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\olive\Desktop\RIT\Year 2\CMPE 160\Labs\Lab10\hadder.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity or3
--- Compiling architecture df of or3
+-- Compiling entity hadder
+-- Compiling architecture df of hadder
 
 } {} {}}
