@@ -1,0 +1,29 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity dflipflop is
+
+	port (
+		signal D : in std_logic;
+		signal clock : in std_logic;
+		signal clear : in std_logic;
+		signal enable : in std_logic;
+		signal Q : out std_logic
+	);
+	
+end entity dflipflop;
+
+architecture struct of dflipflop is
+
+begin
+	process (clock, clear) is begin
+		if enable = '1' then
+			if rising_edge(clock) then
+				Q <= D after 6 ns;
+			elsif (clear = '0') then
+				Q <= '0' after 6 ns;
+			end if;
+		end if;
+	end process;
+	
+end architecture struct;
