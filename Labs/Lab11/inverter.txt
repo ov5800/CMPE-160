@@ -1,0 +1,23 @@
+-- Oliver Vinneras
+-- Creates an inverter
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+-- entity declaration
+entity inverter is
+	-- declares input and output signals
+	Port(
+		signal A : in std_logic;
+		signal Y : out std_logic);
+			
+end;
+
+-- architecture for the gate
+architecture not1 of inverter is
+
+	begin
+		-- output with delay
+		Y <= NOT A after 4 ns;
+
+end;

@@ -34,12 +34,12 @@ Z12 tExplicit 1 CvgOpt 0
 Astruct
 R1
 R2
-Z13 DEx4 work 8 and_gate 0 22 gf?g8NeC_DCAMTVAZCiNo0
+DEx4 work 8 and_gate 0 22 gf?g8NeC_DCAMTVAZCiNo0
 !i122 56
 l15
-Z14 L13 7
-Z15 VO;hCa8ZdR19Z]7HfTJo5:0
-Z16 !s100 :E=0YzmLzZlN8LcJ7nTB91
+Z13 L13 7
+VO;hCa8ZdR19Z]7HfTJo5:0
+!s100 :E=0YzmLzZlN8LcJ7nTB91
 R6
 32
 R7
@@ -51,24 +51,24 @@ R10
 R11
 R12
 Edflipflop
-Z17 w1649120666
+Z14 w1649120666
 R1
 R2
 !i122 49
 R3
-Z18 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/dflipflop.vhdl
-Z19 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/dflipflop.vhdl
+Z15 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/dflipflop.vhdl
+Z16 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/dflipflop.vhdl
 l0
 L4 1
 VZNZC;eQUW@:0B6DC<0=5b2
 !s100 8@:Jo5b8<ZNbAZ:[ZTJ:Q3
 R6
 32
-Z20 !s110 1649120677
+Z17 !s110 1649120677
 !i10b 1
-Z21 !s108 1649120677.000000
-Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/dflipflop.vhdl|
-Z23 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/dflipflop.vhdl|
+Z18 !s108 1649120677.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/dflipflop.vhdl|
+Z20 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/dflipflop.vhdl|
 !i113 1
 R11
 R12
@@ -83,74 +83,74 @@ VWZdhVY]a5zQd;i<YGJ0_k0
 !s100 j4j45a3L@:3>8B3THg_:[2
 R6
 32
-R20
+R17
 !i10b 1
-R21
-R22
-R23
+R18
+R19
+R20
 !i113 1
 R11
 R12
 Edm74ls194a
-Z24 w1649120664
+Z21 w1649289698
 R1
 R2
-!i122 54
+!i122 85
 R3
-Z25 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/DM74LS194A.vhdl
-Z26 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/DM74LS194A.vhdl
+Z22 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/DM74LS194A.vhdl
+Z23 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/DM74LS194A.vhdl
 l0
 L4 1
-V`16j@lU2OzYE[DK9i`67a2
-!s100 YlZ1bWOZF;`:CD]1IhLT90
+VA_;16G>K=bD17ZQT;?emC1
+!s100 H]GR2ciC9E_Pgd=cXSPV`2
 R6
 32
-Z27 !s110 1649124574
+Z24 !s110 1649291904
 !i10b 1
-Z28 !s108 1649124573.000000
-Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/DM74LS194A.vhdl|
-Z30 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/DM74LS194A.vhdl|
+Z25 !s108 1649291904.000000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/DM74LS194A.vhdl|
+Z27 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/DM74LS194A.vhdl|
 !i113 1
 R11
 R12
 Abehave
 R1
 R2
-DEx4 work 10 dm74ls194a 0 22 `16j@lU2OzYE[DK9i`67a2
-!i122 54
+DEx4 work 10 dm74ls194a 0 22 A_;16G>K=bD17ZQT;?emC1
+!i122 85
 l25
 L20 46
 VH>SGU>m>0TU1lm<:DE>`@1
 !s100 m>93FI6z_Om`a0`g6@c=L2
 R6
 32
-R27
+R24
 !i10b 1
-R28
-R29
-R30
+R25
+R26
+R27
 !i113 1
 R11
 R12
 Efull_adder
-Z31 w1649120667
+Z28 w1649120667
 R1
 R2
 !i122 51
 R3
-Z32 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/full_adder.vhdl
-Z33 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/full_adder.vhdl
+Z29 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/full_adder.vhdl
+Z30 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/full_adder.vhdl
 l0
 L4 1
 VT[WL7O0cCobf[dR<hgm]G0
 !s100 5`zU7Y7<H?Q8nDzWdi29k3
 R6
 32
-R20
+R17
 !i10b 1
-R21
-Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/full_adder.vhdl|
-Z35 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/full_adder.vhdl|
+R18
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/full_adder.vhdl|
+Z32 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/full_adder.vhdl|
 !i113 1
 R11
 R12
@@ -165,11 +165,11 @@ VVo4Y3ReoUZ7iLW@;E5=e82
 !s100 P`6T;1LDa`4LeeW3kF6kU3
 R6
 32
-R20
+R17
 !i10b 1
-R21
-R34
-R35
+R18
+R31
+R32
 !i113 1
 R11
 R12
@@ -179,19 +179,19 @@ R1
 R2
 !i122 52
 R3
-Z36 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/inverter.vhdl
-Z37 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/inverter.vhdl
+Z33 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/inverter.vhdl
+Z34 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/inverter.vhdl
 l0
 L4 1
 V2f??YB=7BLJTOjB[mJzZP1
 !s100 MJmGYQgj8f:X1h<G;8QHQ3
 R6
 32
-R20
+R17
 !i10b 1
-R21
-Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/inverter.vhdl|
-Z39 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/inverter.vhdl|
+R18
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/inverter.vhdl|
+Z36 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/inverter.vhdl|
 !i113 1
 R11
 R12
@@ -201,59 +201,100 @@ R2
 DEx4 work 8 inverter 0 22 2f??YB=7BLJTOjB[mJzZP1
 !i122 52
 l15
-R14
+R13
 V5R75C>omR5Rm5Q^V4a@lQ2
 !s100 [jLjfGiU1DGczY`k3z9C60
 R6
 32
-R20
+R17
 !i10b 1
-R21
-R38
-R39
+R18
+R35
+R36
+!i113 1
+R11
+R12
+Eserial_adder
+Z37 w1649291898
+R1
+R2
+!i122 87
+R3
+Z38 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/serial_adder.vhdl
+Z39 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/serial_adder.vhdl
+l0
+L6 1
+V_oTOh=^>_z:^o>TNhIc_L0
+!s100 6^J^jZ;M^8^lh3nlY:h3N1
+R6
+32
+R24
+!i10b 1
+R25
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/serial_adder.vhdl|
+!s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/serial_adder.vhdl|
+!i113 1
+R11
+R12
+Astruct
+R1
+R2
+DEx4 work 12 serial_adder 0 22 _oTOh=^>_z:^o>TNhIc_L0
+!i122 87
+l77
+L20 118
+VX9BZiVMN0ol]n4TRVb=382
+!s100 W<OY7GS9H<SWBXNX[EgeA0
+R6
+32
+R24
+!i10b 1
+R25
+R40
+Z41 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/serial_adder.vhdl|
 !i113 1
 R11
 R12
 Etb_dm74ls194a
-Z40 w1649124517
-Z41 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z42 w1649124517
+Z43 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R1
 R2
-!i122 55
+!i122 86
 R3
-Z42 8C:\Users\olive\Desktop\RIT\Year 2\CMPE 160\Labs\Lab12\tb_DM74LS194A.vhd
-Z43 FC:\Users\olive\Desktop\RIT\Year 2\CMPE 160\Labs\Lab12\tb_DM74LS194A.vhd
+Z44 8C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_DM74LS194A.vhd
+Z45 FC:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_DM74LS194A.vhd
 l0
 L12 1
 V?P6CbA;Mk9SfIO@1J5n@a1
 !s100 ^P6J;lWVE?HDOXLIQc[[00
 R6
 32
-R27
+R24
 !i10b 1
-Z44 !s108 1649124574.000000
-Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\olive\Desktop\RIT\Year 2\CMPE 160\Labs\Lab12\tb_DM74LS194A.vhd|
-Z46 !s107 C:\Users\olive\Desktop\RIT\Year 2\CMPE 160\Labs\Lab12\tb_DM74LS194A.vhd|
+R25
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_DM74LS194A.vhd|
+Z47 !s107 C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_DM74LS194A.vhd|
 !i113 1
 R11
 R12
 Abehav
-R41
+R43
 R1
 R2
 DEx4 work 13 tb_dm74ls194a 0 22 ?P6CbA;Mk9SfIO@1J5n@a1
-!i122 55
+!i122 86
 l57
 L15 151
 V^P=6ozz<IOMnC3JmlYZGW3
 !s100 9m@V<mS`zb4]hFflZK?YH1
 R6
 32
-R27
+R24
 !i10b 1
-R44
-R45
+R25
 R46
+R47
 !i113 1
 R11
 R12

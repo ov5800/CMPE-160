@@ -1,138 +1,21 @@
-# Compile of and_gate.vhdl was successful.
-# Compile of dflipflop.vhdl was successful.
-# Compile of DM74LS194A.vhdl failed with 16 errors.
-# Compile of full_adder.vhdl was successful.
-# Compile of inverter.vhdl was successful.
-# Compile of tb_DM74LS194A.vhd failed with 4 errors.
-# 6 compiles, 2 failed with 20 errors.
-# Compile of and_gate.vhdl was successful.
-# Compile of dflipflop.vhdl was successful.
-# Compile of DM74LS194A.vhdl failed with 16 errors.
-# Compile of full_adder.vhdl was successful.
-# Compile of inverter.vhdl was successful.
-# Compile of tb_DM74LS194A.vhd failed with 5 errors.
-# 6 compiles, 2 failed with 21 errors.
-
-
-
-
-# Compile of and_gate.vhdl was successful.
-# Compile of dflipflop.vhdl was successful.
-# Compile of DM74LS194A.vhdl failed with 16 errors.
-# Compile of full_adder.vhdl was successful.
-# Compile of inverter.vhdl was successful.
-# Compile of tb_DM74LS194A.vhd failed with 5 errors.
-# 6 compiles, 2 failed with 21 errors.
-# Compile of and_gate.vhdl was successful.
-# Compile of dflipflop.vhdl was successful.
-# Compile of DM74LS194A.vhdl failed with 16 errors.
-# Compile of full_adder.vhdl was successful.
-# Compile of inverter.vhdl was successful.
-# Compile of tb_DM74LS194A.vhd failed with 4 errors.
-# 6 compiles, 2 failed with 20 errors.
-# Compile of and_gate.vhdl was successful.
-# Compile of dflipflop.vhdl was successful.
-# Compile of DM74LS194A.vhdl failed with 13 errors.
-# Compile of full_adder.vhdl was successful.
-# Compile of inverter.vhdl was successful.
-# Compile of tb_DM74LS194A.vhd failed with 4 errors.
-# 6 compiles, 2 failed with 17 errors.
-# Compile of and_gate.vhdl was successful.
-# Compile of dflipflop.vhdl was successful.
-# Compile of DM74LS194A.vhdl failed with 1 errors.
-# Compile of full_adder.vhdl was successful.
-# Compile of inverter.vhdl was successful.
-# Compile of tb_DM74LS194A.vhd failed with 4 errors.
-# 6 compiles, 2 failed with 5 errors.
-# Compile of and_gate.vhdl was successful.
-# Compile of dflipflop.vhdl was successful.
-# Compile of DM74LS194A.vhdl was successful.
-# Compile of full_adder.vhdl was successful.
-# Compile of inverter.vhdl was successful.
-# Compile of tb_DM74LS194A.vhd failed with 4 errors.
-# 6 compiles, 1 failed with 4 errors.
-# Compile of and_gate.vhdl was successful.
-# Compile of dflipflop.vhdl was successful.
-# Compile of DM74LS194A.vhdl was successful.
-# Compile of full_adder.vhdl was successful.
-# Compile of inverter.vhdl was successful.
-# Compile of tb_DM74LS194A.vhd was successful.
-# 6 compiles, 0 failed with no errors.
-# Compile of and_gate.vhdl was successful.
-# Compile of dflipflop.vhdl was successful.
-# Compile of DM74LS194A.vhdl was successful.
-# Compile of full_adder.vhdl was successful.
-# Compile of inverter.vhdl was successful.
-# Compile of tb_DM74LS194A.vhd was successful.
-# 6 compiles, 0 failed with no errors.
-vsim -gui work.tb_dm74ls194a
-# vsim -gui work.tb_dm74ls194a 
-# Start time: 21:50:55 on Apr 04,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_dm74ls194a(behav)
-# Loading work.dm74ls194a(behave)
-add wave -position end  sim:/tb_dm74ls194a/a
-add wave -position end  sim:/tb_dm74ls194a/b
-add wave -position end  sim:/tb_dm74ls194a/c
-add wave -position end  sim:/tb_dm74ls194a/d
-add wave -position end  sim:/tb_dm74ls194a/i_data
-add wave -position end  sim:/tb_dm74ls194a/clk
-add wave -position end  sim:/tb_dm74ls194a/clear
-add wave -position end  sim:/tb_dm74ls194a/mode
-add wave -position end  sim:/tb_dm74ls194a/sL
-add wave -position end  sim:/tb_dm74ls194a/sR
-add wave -position end  sim:/tb_dm74ls194a/o_data
-add wave -position end  sim:/tb_dm74ls194a/qa
-add wave -position end  sim:/tb_dm74ls194a/qb
-add wave -position end  sim:/tb_dm74ls194a/qc
-add wave -position end  sim:/tb_dm74ls194a/qd
-add wave -position end  sim:/tb_dm74ls194a/clk_period
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-quit -sim
-# End time: 21:52:10 on Apr 04,2022, Elapsed time: 0:01:15
-# Errors: 0, Warnings: 1
-vsim -gui work.tb_dm74ls194a
-# vsim -gui work.tb_dm74ls194a 
-# Start time: 21:55:11 on Apr 04,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_dm74ls194a(behav)
-# Loading work.dm74ls194a(behave)
-add wave -position end  sim:/tb_dm74ls194a/a
-add wave -position end  sim:/tb_dm74ls194a/b
-add wave -position end  sim:/tb_dm74ls194a/c
-add wave -position end  sim:/tb_dm74ls194a/d
-add wave -position end  sim:/tb_dm74ls194a/i_data
-add wave -position end  sim:/tb_dm74ls194a/clk
-add wave -position end  sim:/tb_dm74ls194a/clear
-add wave -position end  sim:/tb_dm74ls194a/mode
-add wave -position end  sim:/tb_dm74ls194a/sL
-add wave -position end  sim:/tb_dm74ls194a/sR
-add wave -position end  sim:/tb_dm74ls194a/o_data
-add wave -position end  sim:/tb_dm74ls194a/qa
-add wave -position end  sim:/tb_dm74ls194a/qb
-add wave -position end  sim:/tb_dm74ls194a/qc
-add wave -position end  sim:/tb_dm74ls194a/qd
-add wave -position end  sim:/tb_dm74ls194a/clk_period
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-quit -sim
-# End time: 22:09:28 on Apr 04,2022, Elapsed time: 0:14:17
-# Errors: 0, Warnings: 1
 # Compile of DM74LS194A.vhdl was successful.
 # Compile of tb_DM74LS194A.vhd was successful.
 # 2 compiles, 0 failed with no errors.
 vsim -gui work.tb_dm74ls194a
 # vsim -gui work.tb_dm74ls194a 
-# Start time: 22:09:47 on Apr 04,2022
+# Start time: 19:14:58 on Apr 06,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_dm74ls194a(behav)
+# Loading work.dm74ls194a(behave)
+quit -sim
+# End time: 19:15:37 on Apr 06,2022, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 5
+vsim -gui work.tb_dm74ls194a
+# vsim -gui work.tb_dm74ls194a 
+# Start time: 19:15:45 on Apr 06,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -152,33 +35,59 @@ add wave -position end  sim:/tb_dm74ls194a/qc
 add wave -position end  sim:/tb_dm74ls194a/qd
 add wave -position end  sim:/tb_dm74ls194a/clk_period
 restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 run
-restart
-run
+add wave -position end  sim:/tb_dm74ls194a/i_data
+add wave -position end  sim:/tb_dm74ls194a/clk
+add wave -position end  sim:/tb_dm74ls194a/clear
+add wave -position end  sim:/tb_dm74ls194a/mode
+add wave -position end  sim:/tb_dm74ls194a/sL
+add wave -position end  sim:/tb_dm74ls194a/sR
+add wave -position end  sim:/tb_dm74ls194a/o_data
+add wave -position end  sim:/tb_dm74ls194a/qa
+add wave -position end  sim:/tb_dm74ls194a/qb
+add wave -position end  sim:/tb_dm74ls194a/qc
+add wave -position end  sim:/tb_dm74ls194a/qd
+add wave -position end  sim:/tb_dm74ls194a/clk_period
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of tb_DM74LS194A.vhd was successful.
+# 2 compiles, 0 failed with no errors.
 quit -sim
-# End time: 22:47:50 on Apr 04,2022, Elapsed time: 0:38:03
-# Errors: 0, Warnings: 1
-# Compile of and_gate.vhdl was successful.
-vsim -gui work.and_gate
-# vsim -gui work.and_gate 
-# Start time: 22:48:35 on Apr 04,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.and_gate(struct)
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-add wave -position end  sim:/and_gate/A
-add wave -position end  sim:/and_gate/B
-add wave -position end  sim:/and_gate/Y
-restart
-force A 0 0, 0 1 -repeat 200ns
-run
-restart
-force A	  0 0ns, 1 50ns -repeat 100ns
-force B	  0 0ns, 1 100ns -repeat 200ns
-run
-quit -sim
-# End time: 22:52:50 on Apr 04,2022, Elapsed time: 0:04:15
-# Errors: 0, Warnings: 1
+# End time: 20:25:18 on Apr 06,2022, Elapsed time: 1:09:33
+# Errors: 0, Warnings: 2
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of tb_DM74LS194A.vhd was successful.
+# Compile of serial_adder.vhdl failed with 1 errors.
+# 3 compiles, 1 failed with 1 error.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of tb_DM74LS194A.vhd was successful.
+# Compile of serial_adder.vhdl failed with 30 errors.
+# 3 compiles, 1 failed with 30 errors.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of tb_DM74LS194A.vhd was successful.
+# Compile of serial_adder.vhdl failed with 11 errors.
+# 3 compiles, 1 failed with 11 errors.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of tb_DM74LS194A.vhd was successful.
+# Compile of serial_adder.vhdl failed with 9 errors.
+# 3 compiles, 1 failed with 9 errors.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of tb_DM74LS194A.vhd was successful.
+# Compile of serial_adder.vhdl failed with 9 errors.
+# 3 compiles, 1 failed with 9 errors.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of tb_DM74LS194A.vhd was successful.
+# Compile of serial_adder.vhdl failed with 6 errors.
+# 3 compiles, 1 failed with 6 errors.
+# Load canceled
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of tb_DM74LS194A.vhd was successful.
+# Compile of serial_adder.vhdl failed with 2 errors.
+# 3 compiles, 1 failed with 2 errors.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of tb_DM74LS194A.vhd was successful.
+# Compile of serial_adder.vhdl failed with 1 errors.
+# 3 compiles, 1 failed with 1 error.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of tb_DM74LS194A.vhd was successful.
+# Compile of serial_adder.vhdl was successful.
+# 3 compiles, 0 failed with no errors.

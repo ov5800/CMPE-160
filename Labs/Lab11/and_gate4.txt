@@ -1,0 +1,23 @@
+-- Oliver Vinneras
+-- Creates a 4 input AND gate
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+-- entity declaration
+entity and_gate4 is
+	-- declares input and output signals
+	Port(
+		signal A, B, C, D : in std_logic;
+		signal Y : out std_logic);
+		
+end;
+
+-- architecture for the gate
+architecture and4 of and_gate4 is
+
+	begin
+		-- output with delay
+		Y <= A AND B AND C AND D after 7 ns;
+
+end;

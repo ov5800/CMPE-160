@@ -9,10 +9,10 @@ entity DM74LS194A is
 		signal sL, sR : in std_logic;
 		signal a, b, c, d : in std_logic;
 
-		qa : out std_logic;
-		qb : out std_logic;
-		qc : out std_logic;
-		qd : out std_logic
+		signal qa : out std_logic;
+		signal qb : out std_logic;
+		signal qc : out std_logic;
+		signal qd : out std_logic
 		);
 end entity DM74LS194A;
 
