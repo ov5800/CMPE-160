@@ -17,10 +17,12 @@ architecture struct of dflipflop is
 
 begin
 	process (clk, clear) is begin
-		if clear = '0' then
-			q <= '0' after 6 ns;
-		elsif rising_edge(clk) and enable = '1' then
-			Q <= D after 6 ns;
+		if enable = '1' then
+			if rising_edge(clk) then
+				Q <= D after 6 ns;
+			elsif (clear = '0') then
+				Q <= '0' after 6 ns;
+			end if;
 		end if;
 	end process;
 	

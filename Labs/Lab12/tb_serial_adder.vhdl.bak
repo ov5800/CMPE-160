@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity tb_serial_adder is
 end entity tb_serial_adder;
 
-architecture struct of tb_serial_adder is
+architecture behv of tb_serial_adder is
 
 component serial_adder is
 	port (
@@ -75,7 +75,7 @@ port map (
 	carry => carry
 );
 
-process
+clk_process : process
 begin
 	clk <= '0';
 	wait for clk_period/2;
@@ -87,25 +87,23 @@ end process;
 process
 begin
 	for i in tests'range loop
-		wait until rising_edge(clk); 		-- at 650 ns
+		wait until rising_edge(clk);
 			clear_dp <= '0';
-		wait for clk_period / 2; 			-- at 700 ns
+		wait for 3*clk_period / 2;
 			clear_dp <= '1';
 			in_a <= tests(i).in_a;
 			in_b <= tests(i).in_b;
 			control <= "11";
-		wait for clk_period;				-- at 800 ns
-			control <= "01";
-		wait for clk_period * 4;			-- at 1200 ns
+		wait for clk_period;
+			control <= "10";
+		wait for clk_period * 4;
 		assert tests(i).sum = sum 
-			report "Sum is wrong     A: " & vec2str(in_a) & "  B: " & vec2str(in_b) & "  Sum: " & vec2str(sum) 
-			& "  Sum expected: " & vec2str(tests(i).sum) severity ERROR;
+			report "sum is wrong" severity ERROR;
 		assert tests(i).carry = carry
-			report "Carry is wrong     A: " & vec2str(in_a) & "  B: " & vec2str(in_b) & "  Carry: " & std_logic'image(carry)
-			& "  Carry expected: " &  std_logic'image(tests(i).carry) severity ERROR;
+			report "carry is wrong" severity ERROR;
 	end loop;
 	assert false
-		report "Done with all the test cases" severity failure;
+		report "shit might actually work" severity failure;
 end process;
 	
-end architecture struct;
+end architecture behv;

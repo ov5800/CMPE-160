@@ -1,8 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-
-
 entity serial_adder is
 	port (
 		signal in_a : in std_logic_vector( 3 downto 0 );
@@ -71,8 +69,8 @@ architecture struct of serial_adder is
 		);
 	end component inverter;	
 
-	signal sSignal1, sSignal3, sSignal4, sSignal5, sSignal6, sSIgnal7 : std_logic := '0';
-	signal sSignal2 : std_logic_vector( 3 downto 0 ) := "0000";
+	signal regASR, regBqdSignal, dffQSignal, FACoutSignal, invertedSignal, andedControlSignal : std_logic;
+	signal regASumSignal : std_logic_vector( 3 downto 0 ) := "0000";
 
 begin
 	regA : DM74LS194A port map (
@@ -81,17 +79,18 @@ begin
 		c => in_a(1),
 		d => in_a(0),
 		sL => '0',
-		sR => sSignal1,
+		sR => regASR,
 		s1 => control(1),
 		s0 => control(0),
 		clk => clk,
 		clear => clear_dp,
-		qa => sSignal2(3),
-		qb => sSignal2(2),
-		qc => sSignal2(1),
-		qd => sSignal2(0)
+		qa => regASumSignal(3),
+		qb => regASumSignal(2),
+		qc => regASumSignal(1),
+		qd => regASumSignal(0)
 	);
-	sum <= sSignal2;
+	sum <= regASumSignal;
+	carry <= dffQSignal;
 
 	regB : DM74LS194A port map (
 		a => in_b(3),
@@ -104,34 +103,35 @@ begin
 		s0 => control(0),
 		clk => clk,
 		clear => clear_dp,
-		qd => sSignal3
+		qd => regBqdSignal
 	);
 
 	full_adder1 : full_adder port map (
-		A => sSignal2(0),
-		B => sSignal3,
-		Cin => sSignal4,
-		Sum => sSignal1,
-		Cout => sSignal5
+		A => regASumSignal(0),
+		B => regBqdSignal,
+		Cin => dffQSignal,
+		Sum => regASR,
+		Cout => FACoutSignal
 	);
 
 	inverter1 : inverter port map (
-		A => control(0),
-		Y => sSignal6
+		A => control(1),
+		Y => invertedSignal
 	);
 
 	and_gate1 : and_gate port map (
-		A => control(1),
-		B => sSignal6,
-		Y => sSignal7
+		A => control(0),
+		B => invertedSignal,
+		Y => andedControlSignal
 	);
 
 	dff : dflipflop port map (
-		D => sSignal5,
+		D => FACoutSignal,
 		clk => clk,
 		clear => clear_dp,
-		enable => ssignal7,
-		Q => sSignal4
+		enable => andedControlSignal,
+		Q => dffQSignal
 	);
+	
 	
 end architecture struct;

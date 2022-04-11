@@ -17,10 +17,10 @@ entity DM74LS194A is
 end entity DM74LS194A;
 
 
-architecture behave of DM74LS194A is
+architecture struct of DM74LS194A is
 
 	signal mode : std_logic_vector( 1 downto 0 );
-	signal QAI, QBI, QCI, QDI : std_logic;
+	signal QAI, QBI, QCI, QDI : std_logic := '0';
 
 begin
 	mode <= s1 & s0;
@@ -62,4 +62,4 @@ begin
 	qc <= QCI after 22 ns;
 	qd <= QDI after 22 ns;
 	
-end architecture behave;
+end architecture struct;
