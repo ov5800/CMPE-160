@@ -69,7 +69,7 @@ architecture struct of serial_adder is
 		);
 	end component inverter;	
 
-	signal regASR, regBqdSignal, dffQSignal, FACoutSignal, invertedSignal, andedControlSignal : std_logic;
+	signal regASR, regBqdSignal, dffQSignal, FACoutSignal, invertedSignal, andedControlSignal : std_logic := '0';
 	signal regASumSignal : std_logic_vector( 3 downto 0 ) := "0000";
 
 begin
