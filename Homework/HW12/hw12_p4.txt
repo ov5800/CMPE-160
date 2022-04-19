@@ -1,0 +1,22 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity hw12_p4 is
+	Port ( 
+		signal ADDR : in STD_LOGIC_VECTOR(1 DOWNTO 0);
+		signal Z : out STD_LOGIC_VECTOR(2 DOWNTO 0));
+end hw12_p4;
+
+architecture behavioral of hw12_p4 is
+	begin
+		-- outside all processes
+		process ( ADDR ) begin
+			if ADDR = "01" OR ADDR = "10" then
+				Z <= "101" after 10 ns;
+			elsif ADDR = "11" then
+				Z <= "111" after 40 ns;
+			else
+				Z <= "000" after 70 ns;
+			end if;
+		end process;
+end behavioral;

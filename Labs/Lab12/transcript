@@ -1142,3 +1142,422 @@ run
 # ** Failure: Done with all the test cases
 #    Time: 4200 ns  Iteration: 0  Process: /tb_serial_adder/line__88 File: C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_serial_adder.vhdl
 # Break in Process line__88 at C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_serial_adder.vhdl line 108
+quit -sim
+# End time: 19:03:44 on Apr 13,2022, Elapsed time: 117:29:00
+# Errors: 2, Warnings: 1
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# Compile of complete_serial_adder.vhdl was successful.
+# 8 compiles, 0 failed with no errors.
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# Compile of complete_serial_adder.vhdl was successful.
+# 8 compiles, 0 failed with no errors.
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# Compile of complete_serial_adder.vhdl was successful.
+# Compile of tb_complete_serial_adder.vhdl failed with 26 errors.
+# 9 compiles, 1 failed with 26 errors.
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# Compile of complete_serial_adder.vhdl was successful.
+# Compile of tb_complete_serial_adder.vhdl failed with 26 errors.
+# 9 compiles, 1 failed with 26 errors.
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# Compile of complete_serial_adder.vhdl was successful.
+# Compile of tb_complete_serial_adder.vhdl failed with 25 errors.
+# 9 compiles, 1 failed with 25 errors.
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# Compile of complete_serial_adder.vhdl was successful.
+# Compile of tb_complete_serial_adder.vhdl failed with 5 errors.
+# 9 compiles, 1 failed with 5 errors.
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# Compile of complete_serial_adder.vhdl was successful.
+# Compile of tb_complete_serial_adder.vhdl was successful.
+# 9 compiles, 0 failed with no errors.
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# Compile of complete_serial_adder.vhdl was successful.
+# Compile of tb_complete_serial_adder.vhdl was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.tb_complete_serial_adder
+# vsim -gui work.tb_complete_serial_adder 
+# Start time: 20:48:00 on Apr 13,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_complete_serial_adder(struct)
+# ** Warning: (vsim-3473) Component instance "UUT2 : control_unit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_complete_serial_adder File: C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_complete_serial_adder.vhdl
+# Loading work.serial_adder(struct)
+# Loading work.dm74ls194a(struct)
+# Loading work.full_adder(df)
+# Loading work.inverter(struct)
+# Loading work.and_gate(struct)
+# Loading work.dflipflop(struct)
+add wave -position end  sim:/tb_complete_serial_adder/inA
+add wave -position end  sim:/tb_complete_serial_adder/inB
+add wave -position end  sim:/tb_complete_serial_adder/start
+add wave -position end  sim:/tb_complete_serial_adder/clk
+add wave -position end  sim:/tb_complete_serial_adder/clear_sm
+add wave -position end  sim:/tb_complete_serial_adder/clear_dp
+add wave -position end  sim:/tb_complete_serial_adder/control
+add wave -position end  sim:/tb_complete_serial_adder/sum
+add wave -position end  sim:/tb_complete_serial_adder/cout
+add wave -position end  sim:/tb_complete_serial_adder/ready
+add wave -position end  sim:/tb_complete_serial_adder/control_output
+add wave -position end  sim:/tb_complete_serial_adder/clk_period
+add wave -position end  sim:/tb_complete_serial_adder/tests
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3473) Component instance "UUT2 : control_unit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_complete_serial_adder File: C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_complete_serial_adder.vhdl
+do force.txt
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3473) Component instance "UUT2 : control_unit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_complete_serial_adder File: C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_complete_serial_adder.vhdl
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# Compile of complete_serial_adder.vhdl was successful.
+# Compile of tb_complete_serial_adder.vhdl was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_complete_serial_adder(struct)
+# ** Warning: (vsim-3473) Component instance "UUT2 : control_unit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_complete_serial_adder File: C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_complete_serial_adder.vhdl
+# Loading work.serial_adder(struct)
+# Loading work.dm74ls194a(struct)
+# Loading work.full_adder(df)
+# Loading work.inverter(struct)
+# Loading work.and_gate(struct)
+# Loading work.dflipflop(struct)
+do force.txt
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3473) Component instance "UUT2 : control_unit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_complete_serial_adder File: C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_complete_serial_adder.vhdl
+run
+quit -sim
+# End time: 21:03:56 on Apr 13,2022, Elapsed time: 0:15:56
+# Errors: 0, Warnings: 2
+# Load canceled
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# Compile of complete_serial_adder.vhdl was successful.
+# Compile of tb_complete_serial_adder.vhdl was successful.
+# Compile of control_unit.vhdl was successful.
+# 10 compiles, 0 failed with no errors.
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# Compile of complete_serial_adder.vhdl was successful.
+# Compile of tb_complete_serial_adder.vhdl was successful.
+# Compile of control_unit.vhdl was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.control_unit
+# vsim -gui work.control_unit 
+# Start time: 21:05:31 on Apr 13,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.control_unit(behave)
+add wave -position end  sim:/control_unit/start
+add wave -position end  sim:/control_unit/clk
+add wave -position end  sim:/control_unit/clear_sm
+add wave -position end  sim:/control_unit/control_output
+add wave -position end  sim:/control_unit/current_state
+add wave -position end  sim:/control_unit/next_state
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+do force.txt
+run
+quit -sim
+# End time: 21:06:05 on Apr 13,2022, Elapsed time: 0:00:34
+# Errors: 0, Warnings: 1
+vsim -gui work.tb_complete_serial_adder
+# vsim -gui work.tb_complete_serial_adder 
+# Start time: 21:06:14 on Apr 13,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_complete_serial_adder(struct)
+# Loading work.control_unit(behave)
+# Loading work.serial_adder(struct)
+# Loading work.dm74ls194a(struct)
+# Loading work.full_adder(df)
+# Loading work.inverter(struct)
+# Loading work.and_gate(struct)
+# Loading work.dflipflop(struct)
+add wave -position end  sim:/tb_complete_serial_adder/inA
+add wave -position end  sim:/tb_complete_serial_adder/inB
+add wave -position end  sim:/tb_complete_serial_adder/start
+add wave -position end  sim:/tb_complete_serial_adder/clk
+add wave -position end  sim:/tb_complete_serial_adder/clear_sm
+add wave -position end  sim:/tb_complete_serial_adder/clear_dp
+add wave -position end  sim:/tb_complete_serial_adder/control
+add wave -position end  sim:/tb_complete_serial_adder/sum
+add wave -position end  sim:/tb_complete_serial_adder/cout
+add wave -position end  sim:/tb_complete_serial_adder/ready
+add wave -position end  sim:/tb_complete_serial_adder/control_output
+add wave -position end  sim:/tb_complete_serial_adder/clk_period
+add wave -position end  sim:/tb_complete_serial_adder/tests
+restart
+run
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# Compile of complete_serial_adder.vhdl was successful.
+# Compile of tb_complete_serial_adder.vhdl was successful.
+# Compile of control_unit.vhdl was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_complete_serial_adder(struct)
+# Loading work.control_unit(behave)
+# Loading work.serial_adder(struct)
+# Loading work.dm74ls194a(struct)
+# Loading work.full_adder(df)
+# Loading work.inverter(struct)
+# Loading work.and_gate(struct)
+# Loading work.dflipflop(struct)
+run
+restart
+run
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# Compile of complete_serial_adder.vhdl was successful.
+# Compile of tb_complete_serial_adder.vhdl failed with 3 errors.
+# Compile of control_unit.vhdl was successful.
+# 10 compiles, 1 failed with 3 errors.
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# Compile of complete_serial_adder.vhdl was successful.
+# Compile of tb_complete_serial_adder.vhdl failed with 1 errors.
+# Compile of control_unit.vhdl was successful.
+# 10 compiles, 1 failed with 1 error.
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# Compile of complete_serial_adder.vhdl was successful.
+# Compile of tb_complete_serial_adder.vhdl failed with 3 errors.
+# Compile of control_unit.vhdl was successful.
+# 10 compiles, 1 failed with 3 errors.
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# Compile of complete_serial_adder.vhdl was successful.
+# Compile of tb_complete_serial_adder.vhdl was successful.
+# Compile of control_unit.vhdl was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_complete_serial_adder(struct)
+# Loading work.complete_serial_adder(struct)
+# Loading work.control_unit(behave)
+# Loading work.serial_adder(struct)
+# Loading work.dm74ls194a(struct)
+# Loading work.full_adder(df)
+# Loading work.inverter(struct)
+# Loading work.and_gate(struct)
+# Loading work.dflipflop(struct)
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_complete_serial_adder/clear_dp'. 
+run
+# ** Error: Sum is wrong     A: 1010  B: 0101  Sum: 1111  Sum expected: 0010
+#    Time: 4770 ns  Iteration: 1  Instance: /tb_complete_serial_adder
+run
+# ** Failure: Done with all the test cases
+#    Time: 5570 ns  Iteration: 1  Process: /tb_complete_serial_adder/line__89 File: C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_complete_serial_adder.vhdl
+# Break in Process line__89 at C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_complete_serial_adder.vhdl line 107
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Error: Sum is wrong     A: 1010  B: 0101  Sum: 1111  Sum expected: 0010
+#    Time: 4770 ns  Iteration: 1  Instance: /tb_complete_serial_adder
+# ** Failure: Done with all the test cases
+#    Time: 5570 ns  Iteration: 1  Process: /tb_complete_serial_adder/line__89 File: C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_complete_serial_adder.vhdl
+# Break in Process line__89 at C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_complete_serial_adder.vhdl line 107
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# Compile of complete_serial_adder.vhdl was successful.
+# Compile of tb_complete_serial_adder.vhdl was successful.
+# Compile of control_unit.vhdl was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_complete_serial_adder(struct)
+# Loading work.complete_serial_adder(struct)
+# Loading work.control_unit(behave)
+# Loading work.serial_adder(struct)
+# Loading work.dm74ls194a(struct)
+# Loading work.full_adder(df)
+# Loading work.inverter(struct)
+# Loading work.and_gate(struct)
+# Loading work.dflipflop(struct)
+run
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# Compile of complete_serial_adder.vhdl was successful.
+# Compile of tb_complete_serial_adder.vhdl was successful.
+# Compile of control_unit.vhdl was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_complete_serial_adder(struct)
+# Loading work.complete_serial_adder(struct)
+# Loading work.control_unit(behave)
+# Loading work.serial_adder(struct)
+# Loading work.dm74ls194a(struct)
+# Loading work.full_adder(df)
+# Loading work.inverter(struct)
+# Loading work.and_gate(struct)
+# Loading work.dflipflop(struct)
+run
+# ** Error: Sum is wrong     A: 1010  B: 0101  Sum: 1111  Sum expected: 0010
+#    Time: 4770 ns  Iteration: 1  Instance: /tb_complete_serial_adder
+# ** Failure: Done with all the test cases
+#    Time: 5570 ns  Iteration: 1  Process: /tb_complete_serial_adder/line__89 File: C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_complete_serial_adder.vhdl
+# Break in Process line__89 at C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_complete_serial_adder.vhdl line 107
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# Compile of complete_serial_adder.vhdl was successful.
+# Compile of tb_complete_serial_adder.vhdl failed with 1 errors.
+# Compile of control_unit.vhdl was successful.
+# 10 compiles, 1 failed with 1 error.
+# Compile of serial_adder.vhdl was successful.
+# Compile of tb_serial_adder.vhdl was successful.
+# Compile of and_gate.vhdl was successful.
+# Compile of dflipflop.vhdl was successful.
+# Compile of DM74LS194A.vhdl was successful.
+# Compile of full_adder.vhdl was successful.
+# Compile of inverter.vhdl was successful.
+# Compile of complete_serial_adder.vhdl was successful.
+# Compile of tb_complete_serial_adder.vhdl was successful.
+# Compile of control_unit.vhdl was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_complete_serial_adder(struct)
+# Loading work.complete_serial_adder(struct)
+# Loading work.control_unit(behave)
+# Loading work.serial_adder(struct)
+# Loading work.dm74ls194a(struct)
+# Loading work.full_adder(df)
+# Loading work.inverter(struct)
+# Loading work.and_gate(struct)
+# Loading work.dflipflop(struct)
+run
+# ** Error: Sum is wrong     A: 1010  B: 0101  Sum: 1111  Sum expected: 0010
+#    Time: 4870 ns  Iteration: 1  Instance: /tb_complete_serial_adder
+# ** Failure: Done with all the test cases
+#    Time: 5670 ns  Iteration: 1  Process: /tb_complete_serial_adder/line__89 File: C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_complete_serial_adder.vhdl
+# Break in Process line__89 at C:/Users/olive/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_complete_serial_adder.vhdl line 107
+# End time: 22:06:26 on Apr 13,2022, Elapsed time: 1:00:12
+# Errors: 2, Warnings: 1

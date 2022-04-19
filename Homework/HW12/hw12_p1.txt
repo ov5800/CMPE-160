@@ -1,0 +1,20 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity hw12_p1 is
+	Port ( 
+		signal ADDR : in STD_LOGIC_VECTOR(1 DOWNTO 0);
+		signal Z : out STD_LOGIC_VECTOR(2 DOWNTO 0));
+end hw12_p1;
+
+architecture behavioral of hw12_p1 is
+	begin
+	-- outside all processes
+	process ( ADDR ) begin
+		case ADDR is
+			when "01" | "10" => Z <= "101";
+			when "11" => Z <= "111";
+			when others => Z <= "000";
+		end case;
+	end process;
+end behavioral;

@@ -1,8 +1,11 @@
+-- Oliver Vinneras
+-- Creates a d flipflop
+
 library ieee;
 use ieee.std_logic_1164.all;
 
+-- entity for the d flipflop
 entity dflipflop is
-
 	port (
 		signal D : in std_logic;
 		signal clk : in std_logic;
@@ -13,9 +16,11 @@ entity dflipflop is
 	
 end entity dflipflop;
 
+-- structural architecture for the d flipflop
 architecture struct of dflipflop is
 
 begin
+	-- active low clear process
 	process (clk, clear) is begin
 		if clear = '0' then
 			q <= '0' after 6 ns;

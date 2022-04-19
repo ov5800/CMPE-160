@@ -1,0 +1,11 @@
+5)
+	a. 23 ns
+	b. 33 ns
+	c. 33 ns
+
+6)
+	a. Rising edge
+	b. Falling edge
+	c. Synchronous
+	d. Asynchronous
+	e. Asynchronous resets when the value changes and Synchronous resets on a clock edge

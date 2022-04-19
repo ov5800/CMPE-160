@@ -1,6 +1,10 @@
+-- Oliver Vinneras
+-- Creates a control unit
+
 library ieee;
 use ieee.std_logic_1164.all;
 
+-- entity for the control unit
 entity control_unit is
 	port (
 		signal start : in std_logic;
@@ -16,25 +20,28 @@ entity control_unit is
 	
 end entity control_unit;
 
+-- behavioral architecture for the control unit
 architecture behave of control_unit is
 
+	-- state
 	type state is (IDLE, RESET, LOAD, S1, S2, S3, S4, HOLD);
-
 	signal current_state : state;
 	signal next_state : state;
 begin
 
+	-- clock process
 	process ( clk ) is begin
 		if rising_edge( clk ) then
 			if clear_sm = '0' then
 				-- clear
-				current_state <= IDLE;
+				current_state <= IDLE after 10 ns;
 			else
-				current_state <= next_state;
+				current_state <= next_state after 10 ns;
 			end if;
 		end if;
 	end process;
 
+	-- state machine process
 	process ( current_state ) is begin
 		case current_state is
 			when IDLE =>
@@ -61,7 +68,7 @@ begin
 			end case;
 	end process;
 
-
+	-- process to change the output when the current state changes
 	output : process ( current_state ) is begin
 		case current_state is
 			when IDLE => control_output <= "1100" after 10 ns;
@@ -71,7 +78,5 @@ begin
 			when others => control_output <= "0101" after 10 ns;
 		end case;
 	end process;
-
-
 
 end architecture behave;

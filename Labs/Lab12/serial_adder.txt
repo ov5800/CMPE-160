@@ -1,6 +1,10 @@
+-- Oliver Vinneras
+-- Creates a serial adder
+
 library ieee;
 use ieee.std_logic_1164.all;
 
+-- entity for the serial adder
 entity serial_adder is
 	port (
 		signal in_a : in std_logic_vector( 3 downto 0 );
@@ -15,8 +19,10 @@ entity serial_adder is
 	
 end entity serial_adder;
 
+-- structural architecture for the serial adder
 architecture struct of serial_adder is
 
+	-- chip component
 	component DM74LS194A is
 		port (
 			signal clear : in std_logic;
@@ -29,10 +35,10 @@ architecture struct of serial_adder is
 			signal qb : out std_logic;
 			signal qc : out std_logic;
 			signal qd : out std_logic
-			
 		);
 	end component DM74LS194A;
 
+	-- d flipflop component
 	component dflipflop is
 		port (
 			signal D : in std_logic;
@@ -43,6 +49,7 @@ architecture struct of serial_adder is
 		);
 	end component;
 
+	-- full adder component
 	component full_adder is
 		port(
 			signal A : in std_logic;
@@ -54,6 +61,7 @@ architecture struct of serial_adder is
 		);
 	end component;
 
+	-- and gate component
 	component and_gate is
 		port (
 			signal A : in std_logic;
@@ -62,6 +70,7 @@ architecture struct of serial_adder is
 		);
 	end component and_gate;
 
+	-- inverter component
 	component inverter is
 		port (
 			signal A : in std_logic;
@@ -69,10 +78,12 @@ architecture struct of serial_adder is
 		);
 	end component inverter;	
 
+	-- internal signals
 	signal regASR, regBqdSignal, dffQSignal, FACoutSignal, invertedSignal, andedControlSignal : std_logic := '0';
 	signal regASumSignal : std_logic_vector( 3 downto 0 ) := "0000";
 
 begin
+	-- port map for the first shift register
 	regA : DM74LS194A port map (
 		a => in_a(3),
 		b => in_a(2),
@@ -92,6 +103,7 @@ begin
 	sum <= regASumSignal;
 	carry <= dffQSignal;
 
+	-- port map for the second shift register
 	regB : DM74LS194A port map (
 		a => in_b(3),
 		b => in_b(2),
@@ -106,6 +118,7 @@ begin
 		qd => regBqdSignal
 	);
 
+	-- port map for the full adder
 	full_adder1 : full_adder port map (
 		A => regASumSignal(0),
 		B => regBqdSignal,
@@ -114,17 +127,20 @@ begin
 		Cout => FACoutSignal
 	);
 
+	-- port map for the inverter
 	inverter1 : inverter port map (
 		A => control(1),
 		Y => invertedSignal
 	);
 
+	-- port map for the and gate
 	and_gate1 : and_gate port map (
 		A => control(0),
 		B => invertedSignal,
 		Y => andedControlSignal
 	);
 
+	-- port map for the d flipflop
 	dff : dflipflop port map (
 		D => FACoutSignal,
 		clk => clk,
@@ -132,6 +148,5 @@ begin
 		enable => andedControlSignal,
 		Q => dffQSignal
 	);
-	
 	
 end architecture struct;

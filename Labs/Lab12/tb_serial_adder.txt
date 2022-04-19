@@ -1,25 +1,32 @@
+-- Oliver Vinneras
+-- Test Bench  for the serial adder
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+-- empty entity for the test bench
 entity tb_serial_adder is
 end entity tb_serial_adder;
 
+-- structural architecture for the test bench
 architecture struct of tb_serial_adder is
 
-component serial_adder is
-	port (
-		signal in_a : in std_logic_vector( 3 downto 0 );
-		signal control : in std_logic_vector( 1 downto 0 );
-		signal clk : in std_logic;
-		signal clear_dp : std_logic;
-		signal in_b : in std_logic_vector( 3 downto 0 );
+	-- component for the serial adder
+	component serial_adder is
+		port (
+			in_a : in std_logic_vector( 3 downto 0 );
+			control : in std_logic_vector( 1 downto 0 );
+			clk : in std_logic;
+			clear_dp : std_logic;
+			in_b : in std_logic_vector( 3 downto 0 );
 
-		signal sum : out std_logic_vector( 3 downto 0 );
-		signal carry : out std_logic
-	);
-end component serial_adder;
+			sum : out std_logic_vector( 3 downto 0 );
+			carry : out std_logic
+		);
+	end component serial_adder;
 
+-- internal signals
 signal in_a : std_logic_vector( 3 downto 0 );
 signal control : std_logic_vector( 1 downto 0 );
 signal clk : std_logic;
@@ -29,7 +36,7 @@ signal sum : std_logic_vector( 3 downto 0 );
 signal carry : std_logic;
 constant clk_period : time := 100 ns;
 
-
+-- the signals used in the test case
 Type test_vector is record
 	in_a : std_logic_vector( 3 downto 0 );
 	in_b : std_logic_vector( 3 downto 0 );
@@ -37,7 +44,7 @@ Type test_vector is record
 	carry : std_logic;
 end record;
 
-
+-- array of signals to input for the test case and to use to test the outputs
 Type test_record_array is array ( natural range <> ) of test_vector;
 	constant tests : test_record_array := (
 		-- list of values
@@ -63,6 +70,7 @@ Type test_record_array is array ( natural range <> ) of test_vector;
 
 begin
 
+-- port map for the serial adder
 UUT : serial_adder
 port map (
 	-- internal signals
@@ -75,6 +83,7 @@ port map (
 	carry => carry
 );
 
+-- clock process
 process
 begin
 	clk <= '0';
@@ -83,7 +92,7 @@ begin
 	wait for clk_period/2;
 end process;
 
-
+-- main process to load and check values against the test cases
 process
 begin
 	for i in tests'range loop

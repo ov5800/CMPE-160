@@ -1,6 +1,10 @@
+-- Oliver Vinneras
+-- Creates a DM74LS194A chip
+
 library IEEE;
 use IEEE.std_logic_1164.all;
 
+-- chip entity
 entity DM74LS194A is
 	port (
 		signal clear : in std_logic;
@@ -16,15 +20,17 @@ entity DM74LS194A is
 		);
 end entity DM74LS194A;
 
-
+-- structural architecture for the chip
 architecture struct of DM74LS194A is
 
+	-- internal signals
 	signal mode : std_logic_vector( 1 downto 0 );
 	signal QAI, QBI, QCI, QDI : std_logic := '0';
 
 begin
 	mode <= s1 & s0;
 
+	-- active low clear
 	process ( clk, clear ) is begin
 		if clear = '0' then
 			QAI <= '0';
@@ -56,7 +62,7 @@ begin
 			end case;
 		end if;
 	end process;
-
+	-- outputs with delay
 	qa <= QAI after 22 ns;
 	qb <= QBI after 22 ns;
 	qc <= QCI after 22 ns;
