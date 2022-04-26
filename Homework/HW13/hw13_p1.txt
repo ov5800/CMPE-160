@@ -1,0 +1,80 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity hw13_p1 is
+
+Port (
+	signal clk, U, reset_n : in STD_LOGIC;
+	signal zero : out STD_LOGIC);
+
+end hw13_p1;
+
+architecture data_flow of hw13_p1 is
+	-- the registers are numbered like they were in the circuit
+	-- diagram. It is more common to use a 1 downto 0 assignment.
+	signal Q : STD_LOGIC_VECTOR(2 downto 1); -- Q2 is MSB and Q1 is LSB
+begin
+	regs : process ( clk ) is begin
+		if clk'event and clk='1' then
+			if reset_n = '0' then
+				Q <= (others => '0');
+			else
+				Q(1) <= not Q(1);
+				Q(2) <= 
+				( Q(1) and not Q(2) and U ) OR
+				( not Q(1) and not Q(2) and not U ) OR
+				( not Q(1) and Q(2) and U ) OR
+				( Q(1) and Q(2) and not U );
+			end if;
+		end if;
+	end process;
+zero <= not Q(1) and not Q(2);
+end data_flow;
+
+architecture behave of hw13_p1 is
+	TYPE state_type IS (s0, s1, s2, s3);
+	SIGNAL state, next_state : state_type;
+	-- force s0 to "00", s1 to "01" and so on
+	ATTRIBUTE ENUM_ENCODING : STRING;
+	ATTRIBUTE ENUM_ENCODING OF state_type: TYPE IS "00 01 10 11";
+begin
+	sync_proc : process (clk) is begin
+		if clk'event and clk='1' then
+			if reset_n = '0' then
+				state <= s0;
+			else
+				state <= next_state;
+			end if;
+		end if;
+	end process;
+	
+	next_state_decode : process (U, state) is begin
+		case state is
+			when s0 =>
+				if U = '1' then
+					next_state <= s1;
+				else
+					next_state <= s3;
+				end if;
+			when s1 =>
+				if U = '1' then
+					next_state <= s2;
+				else
+					next_state <= s0;
+				end if;
+			when s2 =>
+				if U = '1' then
+					next_state <= s3;
+				else
+					next_state <= s1;
+				end if;
+			when s3 =>
+				if U = '1' then
+					next_state <= s0;
+				else
+					next_state <= s2;
+				end if;
+		end case;
+	end process;
+	zero <= '1' when state = s0 else '0';
+end behave;

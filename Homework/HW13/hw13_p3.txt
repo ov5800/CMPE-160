@@ -1,0 +1,50 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity hw13_p3 is
+
+Port ( 
+	signal clk, R, reset_n : in STD_LOGIC;
+	signal Q : out STD_LOGIC_VECTOR(1 downto 0));
+
+end hw13_p3;
+
+architecture data_flow of hw13_p3 is
+	signal Qreg : STD_LOGIC_VECTOR(1 downto 0);
+begin
+	regs : process (clk) is begin
+		if clk'event and clk='1' then
+			if reset_n = '0' then
+				Qreg <= (others => '0');
+			else
+				Qreg(1) <= ( Qreg(1) and ( not R ) ) or ( Qreg(0) and R );
+				Qreg(0) <= ( ( not Qreg(1) ) and R ) or ( ( not R ) and Qreg(0) );
+			end if;
+		end if;
+	end process;
+	Q <= Qreg;
+end data_flow;
+
+architecture behave of hw13_p3 is
+	signal Qreg : STD_LOGIC_VECTOR(1 downto 0);
+begin
+	regs : process (clk) is begin
+		if clk'event and clk='1' then
+			if reset_n = '0' then
+				Qreg <= (others => '0');
+			else
+				if R = '1' then
+					case Qreg is
+						when "00" => Qreg <= "01";
+						when "01" => Qreg <= "11";
+						when "11" => Qreg <= "10";
+						when others => Qreg <= "00"; -- "10"
+					end case;
+				else
+					Qreg <= Qreg;
+				end if;
+			end if;
+		end if;
+	end process;
+	Q <= Qreg;
+end behave;

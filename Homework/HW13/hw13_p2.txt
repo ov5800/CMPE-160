@@ -1,0 +1,25 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity hw13_p2 is
+
+Port ( 
+	signal clk, S, reset_n : in STD_LOGIC;
+	signal Z : out STD_LOGIC);
+
+end hw13_p2;
+
+architecture data_flow of hw13_p2 is
+	signal Q : STD_LOGIC_VECTOR(7 downto 0);
+begin
+	regs : process (clk) is begin
+		if clk'event and clk='1' then
+			if reset_n = '0' then
+				Q <= (others => '0');
+			else
+				Q <= S & Q(7 downto 1);
+			end if;
+		end if;
+	end process;
+Z <= Q(0);
+end data_flow;
