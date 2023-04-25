@@ -1,0 +1,75 @@
+-- Oliver Vinneras
+-- Creates a complete serial adder using a control unit and a serial adder
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+-- entity for the complete serial adder
+entity complete_serial_adder is
+	port (
+		-- input signals
+		start : in std_logic;
+		clk : in std_logic;
+		clear_sm : in std_logic;
+		inA, inB : in std_logic_vector( 3 downto 0 );
+
+		-- output signals
+		ready : out std_logic;
+		cout : out std_logic;
+		sum : out std_logic_vector( 3 downto 0 )
+	);
+end entity complete_serial_adder;
+
+-- structural architecture for the complete serial adder
+architecture struct of complete_serial_adder is
+
+	-- control unit component
+	component control_unit is
+		port (
+			start : in std_logic;
+			clk : in std_logic;
+			clear_sm : in std_logic;
+			control_output : out std_logic_vector( 3 downto 0 )
+		);
+	end component control_unit;
+
+	-- serial adder component
+	component serial_adder is
+		port (
+			in_a : in std_logic_vector( 3 downto 0 );
+			control : in std_logic_vector( 1 downto 0 );
+			clk : in std_logic;
+			clear_dp : std_logic;
+			in_b : in std_logic_vector( 3 downto 0 );
+
+			sum : out std_logic_vector( 3 downto 0 );
+			carry : out std_logic
+	);
+	end component serial_adder;
+
+	signal temp_output : std_logic_vector( 3 downto 0 ) := "0000";
+
+begin
+
+	-- control unit port map
+	c_unit : control_unit port map (
+		start => start,
+		clk => clk,
+		clear_sm => clear_sm,
+		control_output => temp_output
+	);
+
+	-- serial adder port map
+	serial : serial_adder port map (
+		in_a => inA,
+		in_b => inB,
+		clk => clk,
+		control => temp_output( 1 downto 0 ),
+		clear_dp => temp_output(2),
+		sum => sum,
+		carry => cout
+	);
+	ready <= temp_output(3);
+
+	
+end architecture struct;

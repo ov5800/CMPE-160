@@ -1,0 +1,3 @@
+force clear_sm 0 0, 1 800 ns -repeat 1600 ns
+force clk 0 0,1 50 ns -repeat 100 ns
+force start 0 0, 1 200 ns

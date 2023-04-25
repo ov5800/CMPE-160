@@ -1,0 +1,48 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile {C:/Users/olive/OneDrive - rit.edu/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/Ex12.mpf}
+# Loading project Ex12
+# 0 compiles, 10 failed with no errors.
+# Compile of tb_serial_adder.vhd was successful.
+# Compile of and_gate.vhd was successful.
+# Compile of complete_serial_adder.vhd was successful.
+# Compile of control_unit.vhd was successful.
+# Compile of dflipflop.vhd was successful.
+# Compile of DM74LS194A.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of inverter.vhd was successful.
+# Compile of serial_adder.vhd was successful.
+# Compile of tb_complete_serial_adder.vhd was successful.
+# Compile of tb_DM74LS194A.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_complete_serial_adder
+# vsim -gui work.tb_complete_serial_adder 
+# Start time: 14:56:46 on Apr 25,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_complete_serial_adder(struct)
+# Loading work.complete_serial_adder(struct)
+# Loading work.control_unit(behave)
+# Loading work.serial_adder(struct)
+# Loading work.dm74ls194a(struct)
+# Loading work.full_adder(df)
+# Loading work.inverter(struct)
+# Loading work.and_gate(struct)
+# Loading work.dflipflop(struct)
+add wave -position end  sim:/tb_complete_serial_adder/inA
+add wave -position end  sim:/tb_complete_serial_adder/inB
+add wave -position end  sim:/tb_complete_serial_adder/start
+add wave -position end  sim:/tb_complete_serial_adder/clk
+add wave -position end  sim:/tb_complete_serial_adder/clear_sm
+add wave -position end  sim:/tb_complete_serial_adder/sum
+add wave -position end  sim:/tb_complete_serial_adder/cout
+add wave -position end  sim:/tb_complete_serial_adder/ready
+add wave -position end  sim:/tb_complete_serial_adder/clk_period
+add wave -position end  sim:/tb_complete_serial_adder/tests
+run
+# ** Error: Sum is wrong     A: 1010  B: 0101  Sum: 1111  Sum expected: 0010
+#    Time: 4870 ns  Iteration: 1  Instance: /tb_complete_serial_adder
+# ** Failure: Done with all the test cases
+#    Time: 5670 ns  Iteration: 1  Process: /tb_complete_serial_adder/line__98 File: C:/Users/olive/OneDrive - rit.edu/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_complete_serial_adder.vhd
+# Break in Process line__98 at C:/Users/olive/OneDrive - rit.edu/Desktop/RIT/Year 2/CMPE 160/Labs/Lab12/tb_complete_serial_adder.vhd line 116

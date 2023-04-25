@@ -1,0 +1,23 @@
+-- Oliver Vinneras
+-- Creates an inverter
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+-- entity for the inverter
+entity inverter is
+	port(
+		signal A : in std_logic;
+		signal Y : out std_logic
+		);
+	
+end entity inverter;
+
+-- structural architecture for the inverter
+architecture struct of inverter is
+
+begin
+	-- output with delay
+	Y <= not A after 2 ns;
+	
+end architecture struct;

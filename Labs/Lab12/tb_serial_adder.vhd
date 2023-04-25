@@ -1,0 +1,120 @@
+-- Oliver Vinneras
+-- Test Bench  for the serial adder
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+-- empty entity for the test bench
+entity tb_serial_adder is
+end entity tb_serial_adder;
+
+-- structural architecture for the test bench
+architecture struct of tb_serial_adder is
+
+	-- component for the serial adder
+	component serial_adder is
+		port (
+			in_a : in std_logic_vector( 3 downto 0 );
+			control : in std_logic_vector( 1 downto 0 );
+			clk : in std_logic;
+			clear_dp : std_logic;
+			in_b : in std_logic_vector( 3 downto 0 );
+
+			sum : out std_logic_vector( 3 downto 0 );
+			carry : out std_logic
+		);
+	end component serial_adder;
+
+-- internal signals
+signal in_a : std_logic_vector( 3 downto 0 );
+signal control : std_logic_vector( 1 downto 0 );
+signal clk : std_logic;
+signal clear_dp : std_logic;
+signal in_b : std_logic_vector( 3 downto 0 );
+signal sum : std_logic_vector( 3 downto 0 );
+signal carry : std_logic;
+constant clk_period : time := 100 ns;
+
+-- the signals used in the test case
+Type test_vector is record
+	in_a : std_logic_vector( 3 downto 0 );
+	in_b : std_logic_vector( 3 downto 0 );
+	sum : std_logic_vector( 3 downto 0 );
+	carry : std_logic;
+end record;
+
+-- array of signals to input for the test case and to use to test the outputs
+Type test_record_array is array ( natural range <> ) of test_vector;
+	constant tests : test_record_array := (
+		-- list of values
+        (X"0", X"4", X"4", '0'), 
+        (X"C", X"E", X"A", '1'), 
+        (X"8", X"A", X"2", '1'),
+        (X"F", X"F", X"E", '1'), 
+        (X"F", X"1", X"0", '1'), 
+        (X"A", X"5", X"2", '0'), 
+        (X"8", X"7", X"F", '0'));
+
+-- Helper function to print std_logic_vectors more easily
+    function vec2str(vec: std_logic_vector) return string is
+        variable stmp: string(vec'high+1 downto 1);
+        variable counter : integer := 1;
+    begin
+        for i in vec'reverse_range loop
+            stmp(counter) := std_logic'image(vec(i))(2); -- image returns '1' (with quotes)
+            counter := counter + 1;
+        end loop;
+        return stmp;
+    end vec2str;
+
+begin
+
+-- port map for the serial adder
+UUT : serial_adder
+port map (
+	-- internal signals
+	in_a => in_a,
+	in_b => in_b,
+	control => control,
+	clk => clk,
+	clear_dp => clear_dp,
+	sum => sum,
+	carry => carry
+);
+
+-- clock process
+process
+begin
+	clk <= '0';
+	wait for clk_period/2;
+	clk <= '1';
+	wait for clk_period/2;
+end process;
+
+-- main process to load and check values against the test cases
+process
+begin
+	for i in tests'range loop
+		wait until rising_edge(clk); 		-- at 650 ns
+			clear_dp <= '0';
+		wait for clk_period / 2; 			-- at 700 ns
+			clear_dp <= '1';
+			in_a <= tests(i).in_a;
+			in_b <= tests(i).in_b;
+			control <= "11";
+		wait for clk_period;				-- at 800 ns
+			control <= "01";
+		wait for clk_period * 4;			-- at 1200 ns
+		assert tests(i).sum = sum 
+			report "Sum is wrong     A: " & vec2str(in_a) & "  B: " & vec2str(in_b) & "  Sum: " & vec2str(sum) 
+			& "  Sum expected: " & vec2str(tests(i).sum) severity ERROR;
+		assert tests(i).carry = carry
+			report "Carry is wrong     A: " & vec2str(in_a) & "  B: " & vec2str(in_b) & "  Carry: " & std_logic'image(carry)
+			& "  Carry expected: " &  std_logic'image(tests(i).carry) severity ERROR;
+	end loop;
+	assert false
+		report "Done with all the test cases" severity failure;
+end process;
+	
+end architecture struct;

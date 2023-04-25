@@ -1,0 +1,82 @@
+-- Oliver Vinneras
+-- Creates a control unit
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+-- entity for the control unit
+entity control_unit is
+	port (
+		signal start : in std_logic;
+		signal clk : in std_logic;
+		signal clear_sm : in std_logic;
+
+		-- ready + clear_dp + mode
+		--   x 		  x  	   xx
+		-- clear is active low
+		-- ready is active high
+		signal control_output : out std_logic_vector( 3 downto 0 )
+	);
+	
+end entity control_unit;
+
+-- behavioral architecture for the control unit
+architecture behave of control_unit is
+
+	-- state
+	type state is (IDLE, RESET, LOAD, S1, S2, S3, S4, HOLD);
+	signal current_state : state;
+	signal next_state : state;
+begin
+
+	-- clock process
+	process ( clk ) is begin
+		if rising_edge( clk ) then
+			if clear_sm = '0' then
+				-- clear
+				current_state <= IDLE after 10 ns;
+			else
+				current_state <= next_state after 10 ns;
+			end if;
+		end if;
+	end process;
+
+	-- state machine process
+	process ( current_state ) is begin
+		case current_state is
+			when IDLE =>
+				if start = '0' then
+					next_state <= IDLE;
+				else
+					next_state <= RESET;
+				end if;
+			when RESET =>
+				next_state <= LOAD;
+			when LOAD =>
+				next_state <= S1;
+			when S1 =>
+				next_state <= S2;
+			when S2 =>
+				next_state <= S3;
+			when S3 =>
+				next_state <= S4;
+			when S4 =>
+				next_state <= HOLD;
+			when others =>
+				next_state <= IDLE;
+
+			end case;
+	end process;
+
+	-- process to change the output when the current state changes
+	output : process ( current_state ) is begin
+		case current_state is
+			when IDLE => control_output <= "1100" after 10 ns;
+			when RESET => control_output <= "0000" after 10 ns;
+			when LOAD => control_output <= "0111" after 10 ns;
+			when HOLD => control_output <= "0100" after 10 ns;
+			when others => control_output <= "0101" after 10 ns;
+		end case;
+	end process;
+
+end architecture behave;
